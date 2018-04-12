@@ -37,6 +37,7 @@
 		839928FE20A1ADD500208440 /* HistoryRateCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839928FD20A1ADD500208440 /* HistoryRateCellModel.swift */; };
 		8399290020A1B04C00208440 /* UITableview+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839928FF20A1B04C00208440 /* UITableview+Extension.swift */; };
 		8399290220A1B4E600208440 /* HeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8399290120A1B4E600208440 /* HeaderViewModel.swift */; };
+		8399290620A1CE9600208440 /* CachedWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8399290520A1CE9600208440 /* CachedWebservice.swift */; };
 		84673808F336D7FFB57728C7 /* Pods_BitcoinRateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC9CB5712A2060ACC664B40 /* Pods_BitcoinRateUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +97,7 @@
 		839928FD20A1ADD500208440 /* HistoryRateCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRateCellModel.swift; sourceTree = "<group>"; };
 		839928FF20A1B04C00208440 /* UITableview+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableview+Extension.swift"; sourceTree = "<group>"; };
 		8399290120A1B4E600208440 /* HeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewModel.swift; sourceTree = "<group>"; };
+		8399290520A1CE9600208440 /* CachedWebservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedWebservice.swift; sourceTree = "<group>"; };
 		9CC9CB5712A2060ACC664B40 /* Pods_BitcoinRateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitcoinRateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D08C3D83496BA09155DD2816 /* Pods_BitcoinRateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitcoinRateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -302,6 +304,7 @@
 				839928C320A1881E00208440 /* NetworkManager.swift */,
 				839928D720A18A6A00208440 /* Router.swift */,
 				839928F220A1A8FE00208440 /* NetworkMockTest.swift */,
+				8399290520A1CE9600208440 /* CachedWebservice.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -604,6 +607,7 @@
 				839928F120A1A87F00208440 /* MainViewModel.swift in Sources */,
 				839928FC20A1AD4E00208440 /* ReusableView.swift in Sources */,
 				8399290220A1B4E600208440 /* HeaderViewModel.swift in Sources */,
+				8399290620A1CE9600208440 /* CachedWebservice.swift in Sources */,
 				839928ED20A1909D00208440 /* ResponseTime.swift in Sources */,
 				839928E920A18F0D00208440 /* Currency.swift in Sources */,
 				839928D620A189BE00208440 /* HTTPURLResponse+Extension.swift in Sources */,

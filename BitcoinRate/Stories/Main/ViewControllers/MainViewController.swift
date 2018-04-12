@@ -27,7 +27,6 @@ final class MainViewController: UIViewController {
         super.viewWillAppear(animated)
         viewModel.getCurrentRate()
         viewModel.getHistoryRates()
-        
     }
     
 }

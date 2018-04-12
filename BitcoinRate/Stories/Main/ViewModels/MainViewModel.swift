@@ -17,6 +17,7 @@ protocol MainViewModelDelegate: class {
 final class MainViewModel {
     
     private var networkManager : NetworkRessource
+    
     private var fetchedRates = [HistoryRate]()
     
     weak var delegate: MainViewModelDelegate?
@@ -27,9 +28,9 @@ final class MainViewModel {
         }
     }
     
-    // MARK: View model Methods
+    // MARK: Public Methods
     
-    init(networkRessource: NetworkRessource = NetworkManager()) {
+    init(networkRessource: NetworkRessource = CachedWebservice()) {
         // Use Mock response when UI testing
         if let _ = ProcessInfo.processInfo.environment["-ShouldMockResponse"] {
             networkManager = NetworkMockTest()
@@ -52,8 +53,9 @@ final class MainViewModel {
     func getHistoryRates() {
         let endDate = Date()
         
-        // Get date 2 weeks previous the current date
+        // Get the date 2 weeks before the current date
         let fromDate = Calendar.current.date(byAdding: .weekOfMonth, value: -2, to: endDate)
+        
         let currency = "EUR"
         networkManager.fetchHistoryRate(from: fromDate!, to: endDate, currency: currency, completionHandler: { [unowned self] response in
             self.process(response, currency: currency)
@@ -61,12 +63,14 @@ final class MainViewModel {
             self.delegate?.mainViewModel(model: self, showError: error)
         }
     }
-    
+  
     func historyCellModel(for indexPath: IndexPath) -> HistoryRateCellModel {
         let rate = fetchedRates[indexPath.row]
         let model = HistoryRateCellModel(historyRate: rate)
         return model
     }
+    
+    // MARK: Private methods
     
     /// Process HistoryRateResponse to retreive and sort fetched rates by descending date
     private func process(_ response: HistoryRateResponse, currency: String) {

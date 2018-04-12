@@ -91,3 +91,9 @@ enum Router {
         return request
     }
 }
+
+extension Router {
+    var cacheKey: String {
+        return "cache\(self.asURLRequest().hashValue)"
+    }
+}

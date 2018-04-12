@@ -64,16 +64,3 @@ struct NetworkManager {
         return task
     }
 }
-
-extension NetworkManager : NetworkRessource {
-    func fetchCurrentRate(completionHandler: @escaping (CurrentRateResponse) -> (), failureHandler: @escaping FailureHandler) {
-        let request = Router.currentRate.asURLRequest()
-        self.callRequest(request: request, withSuccess: completionHandler, andFailure: failureHandler)
-    }
-    
-    func fetchHistoryRate(from fromDate: Date, to toDate: Date, currency: String, completionHandler: @escaping (HistoryRateResponse) -> (), failureHandler: @escaping FailureHandler) {
-        let request = Router.historyRate(start: fromDate, end: toDate, currency: currency).asURLRequest()
-        self.callRequest(request: request, withSuccess: completionHandler, andFailure: failureHandler)
-        
-    }
-}
