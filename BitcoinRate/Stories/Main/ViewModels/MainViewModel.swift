@@ -17,7 +17,6 @@ protocol MainViewModelDelegate: class {
 final class MainViewModel {
     
     private var networkManager : NetworkRessource
-    
     private var fetchedRates = [HistoryRate]()
     
     weak var delegate: MainViewModelDelegate?

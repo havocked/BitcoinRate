@@ -10,7 +10,7 @@ import Foundation
 
 
 struct FileStorage {
-    let baseURL: URL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+    private let baseURL: URL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
     
     subscript(key: String) -> Data? {
         get { return try? Data(contentsOf: baseURL.appendingPathComponent(key)) }
@@ -19,17 +19,30 @@ struct FileStorage {
             try? newValue?.write(to: url)
         }
     }
+    
+    func clearDiskCache() {
+        let fileManager = FileManager.default
+        guard let filePaths = try? fileManager.contentsOfDirectory(at: baseURL, includingPropertiesForKeys: nil, options: []) else { return }
+        for filePath in filePaths {
+            try? fileManager.removeItem(at: filePath)
+        }
+    }
 }
 
 final class Cache {
-    var storage = FileStorage()
+    private var storage = FileStorage()
     
     func load<A: Codable>(_ resource: Router) -> A? {
         guard case .get = resource.method else { return nil }
         if let data = storage[resource.cacheKey] {
             let decoder = JSONDecoder()
-            let decodedResult = try! decoder.decode(A.self, from: data)
-            return decodedResult
+            
+            do {
+                let decodedResult = try decoder.decode(A.self, from: data)
+                return decodedResult
+            } catch {
+                return nil
+            }
         } else {
             return nil
         }
@@ -41,12 +54,20 @@ final class Cache {
         let encodedResult = try! encoder.encode(data)
         storage[resource.cacheKey] = encodedResult
     }
+    
+    func clearCache() {
+        storage.clearDiskCache()
+    }
 }
 
 /// This class uses The network manager, which usually implements the NetworkRessource protocol, but here CachedWebservice will implement its own, so that we can seperate cache logic and network calls.
 struct CachedWebservice : NetworkRessource {
-    let networkManager = NetworkManager()
-    let cache = Cache()
+    private let networkManager = NetworkManager()
+    private let cache = Cache()
+    
+    func clearCache() {
+        cache.clearCache()
+    }
     
     func fetchCurrentRate(completionHandler: @escaping (CurrentRateResponse) -> (), failureHandler: @escaping FailureHandler) {
         

@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C8D081372231B544FBC58D8 /* Pods_BitcoinRateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08C3D83496BA09155DD2816 /* Pods_BitcoinRateTests.framework */; };
-		0FECF18B0CE0B6207B215568 /* Pods_BitcoinRate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C07CCB994C94FB39D633BBC /* Pods_BitcoinRate.framework */; };
+		1152CECED45F0881637FFD76 /* Pods_BitcoinRate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21B71B40323D4272503ACED /* Pods_BitcoinRate.framework */; };
+		3524E8466A758D86B2DFB290 /* Pods_BitcoinRateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D41E954697F5C47F818E6C1 /* Pods_BitcoinRateTests.framework */; };
+		4F90414FB2916556F08A2B90 /* Pods_Watch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923A4381AA02F8211DA908C4 /* Pods_Watch_Extension.framework */; };
+		773361C9AED73E14A99E411E /* Pods_BitcoinRateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD30EB0510E61D425D9A66A /* Pods_BitcoinRateUITests.framework */; };
 		8399288D20A1849400208440 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8399288C20A1849400208440 /* AppDelegate.swift */; };
 		8399288F20A1849400208440 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8399288E20A1849400208440 /* MainViewController.swift */; };
 		8399289420A1849400208440 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8399289220A1849400208440 /* Main.storyboard */; };
 		8399289620A1849500208440 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8399289520A1849500208440 /* Assets.xcassets */; };
 		8399289920A1849500208440 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8399289720A1849500208440 /* LaunchScreen.storyboard */; };
-		839928A420A1849500208440 /* BitcoinRateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839928A320A1849500208440 /* BitcoinRateTests.swift */; };
 		839928AF20A1849500208440 /* BitcoinRateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839928AE20A1849500208440 /* BitcoinRateUITests.swift */; };
 		839928BD20A1856D00208440 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 839928BC20A1856D00208440 /* HeaderView.xib */; };
 		839928C020A1858600208440 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839928BF20A1858600208440 /* HeaderView.swift */; };
@@ -38,7 +39,24 @@
 		8399290020A1B04C00208440 /* UITableview+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839928FF20A1B04C00208440 /* UITableview+Extension.swift */; };
 		8399290220A1B4E600208440 /* HeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8399290120A1B4E600208440 /* HeaderViewModel.swift */; };
 		8399290620A1CE9600208440 /* CachedWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8399290520A1CE9600208440 /* CachedWebservice.swift */; };
-		84673808F336D7FFB57728C7 /* Pods_BitcoinRateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC9CB5712A2060ACC664B40 /* Pods_BitcoinRateUITests.framework */; };
+		8399290D20A1DD6C00208440 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8399290B20A1DD6C00208440 /* Interface.storyboard */; };
+		8399290F20A1DD6D00208440 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8399290E20A1DD6D00208440 /* Assets.xcassets */; };
+		8399291620A1DD6D00208440 /* Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8399291520A1DD6D00208440 /* Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8399291B20A1DD6D00208440 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8399291A20A1DD6D00208440 /* InterfaceController.swift */; };
+		8399291D20A1DD6D00208440 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8399291C20A1DD6D00208440 /* ExtensionDelegate.swift */; };
+		8399291F20A1DD6D00208440 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8399291E20A1DD6D00208440 /* NotificationController.swift */; };
+		8399292120A1DD6E00208440 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8399292020A1DD6E00208440 /* Assets.xcassets */; };
+		8399292620A1DD6E00208440 /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8399290920A1DD6C00208440 /* Watch.app */; };
+		8399293220A1E41C00208440 /* RateTableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8399293120A1E41C00208440 /* RateTableRowController.swift */; };
+		8399293420A1F34B00208440 /* MainViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8399293320A1F34B00208440 /* MainViewModelTests.swift */; };
+		8399293720A1F4A500208440 /* current.json in Resources */ = {isa = PBXBuildFile; fileRef = 8399293620A1F4A500208440 /* current.json */; };
+		8399293820A1F4D200208440 /* HistoryRateCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839928FD20A1ADD500208440 /* HistoryRateCellModel.swift */; };
+		8399293A20A1F53200208440 /* history.json in Resources */ = {isa = PBXBuildFile; fileRef = 8399293920A1F53200208440 /* history.json */; };
+		8399293B20A1F53200208440 /* history.json in Resources */ = {isa = PBXBuildFile; fileRef = 8399293920A1F53200208440 /* history.json */; };
+		8399293C20A1F59400208440 /* HistoryRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839928F420A1AA3700208440 /* HistoryRate.swift */; };
+		8399293D20A1F5EF00208440 /* current.json in Resources */ = {isa = PBXBuildFile; fileRef = 8399293620A1F4A500208440 /* current.json */; };
+		8399293F20A1FAFA00208440 /* CacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8399293E20A1FAFA00208440 /* CacheTests.swift */; };
+		86ABD7CA66038EA1BB44DCFB /* Pods_Watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD2CC2EE9F34E5CE984A298 /* Pods_Watch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,10 +74,53 @@
 			remoteGlobalIDString = 8399288820A1849400208440;
 			remoteInfo = BitcoinRate;
 		};
+		8399291720A1DD6D00208440 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8399288120A1849400208440 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8399291420A1DD6D00208440;
+			remoteInfo = "Watch Extension";
+		};
+		8399292420A1DD6E00208440 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8399288120A1849400208440 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8399290820A1DD6C00208440;
+			remoteInfo = Watch;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8399292B20A1DD6E00208440 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8399291620A1DD6D00208440 /* Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8399293020A1DD6E00208440 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8399292620A1DD6E00208440 /* Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		0C07CCB994C94FB39D633BBC /* Pods_BitcoinRate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitcoinRate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17E75659E6361FF25B362D6D /* Pods-Watch.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch.development.xcconfig"; path = "Pods/Target Support Files/Pods-Watch/Pods-Watch.development.xcconfig"; sourceTree = "<group>"; };
+		1D41E954697F5C47F818E6C1 /* Pods_BitcoinRateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitcoinRateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AD2CC2EE9F34E5CE984A298 /* Pods_Watch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E742DB7D3883EDED0C39BEF /* Pods-Watch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Watch Extension/Pods-Watch Extension.release.xcconfig"; sourceTree = "<group>"; };
+		750A4806E07096206066F203 /* Pods-Watch Extension.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch Extension.development.xcconfig"; path = "Pods/Target Support Files/Pods-Watch Extension/Pods-Watch Extension.development.xcconfig"; sourceTree = "<group>"; };
 		8399288920A1849400208440 /* BitcoinRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinRate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8399288C20A1849400208440 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8399288E20A1849400208440 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +129,6 @@
 		8399289820A1849500208440 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8399289A20A1849500208440 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8399289F20A1849500208440 /* BitcoinRateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitcoinRateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		839928A320A1849500208440 /* BitcoinRateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinRateTests.swift; sourceTree = "<group>"; };
 		839928A520A1849500208440 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		839928AA20A1849500208440 /* BitcoinRateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitcoinRateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		839928AE20A1849500208440 /* BitcoinRateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinRateUITests.swift; sourceTree = "<group>"; };
@@ -98,8 +158,28 @@
 		839928FF20A1B04C00208440 /* UITableview+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableview+Extension.swift"; sourceTree = "<group>"; };
 		8399290120A1B4E600208440 /* HeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewModel.swift; sourceTree = "<group>"; };
 		8399290520A1CE9600208440 /* CachedWebservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedWebservice.swift; sourceTree = "<group>"; };
-		9CC9CB5712A2060ACC664B40 /* Pods_BitcoinRateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitcoinRateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D08C3D83496BA09155DD2816 /* Pods_BitcoinRateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitcoinRateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8399290920A1DD6C00208440 /* Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8399290C20A1DD6C00208440 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8399290E20A1DD6D00208440 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8399291020A1DD6D00208440 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8399291520A1DD6D00208440 /* Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8399291A20A1DD6D00208440 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8399291C20A1DD6D00208440 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8399291E20A1DD6D00208440 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8399292020A1DD6E00208440 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8399292220A1DD6E00208440 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8399292320A1DD6E00208440 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		8399293120A1E41C00208440 /* RateTableRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateTableRowController.swift; sourceTree = "<group>"; };
+		8399293320A1F34B00208440 /* MainViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTests.swift; sourceTree = "<group>"; };
+		8399293620A1F4A500208440 /* current.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = current.json; sourceTree = "<group>"; };
+		8399293920A1F53200208440 /* history.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = history.json; sourceTree = "<group>"; };
+		8399293E20A1FAFA00208440 /* CacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheTests.swift; sourceTree = "<group>"; };
+		864E2EDF4037C6224D0897DC /* Pods-Watch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Watch/Pods-Watch.release.xcconfig"; sourceTree = "<group>"; };
+		8CB023936371999AF9308E2D /* Pods-Watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Watch/Pods-Watch.debug.xcconfig"; sourceTree = "<group>"; };
+		923A4381AA02F8211DA908C4 /* Pods_Watch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB108C0C6C2CFB6015354840 /* Pods-Watch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Watch Extension/Pods-Watch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		CDD30EB0510E61D425D9A66A /* Pods_BitcoinRateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitcoinRateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D21B71B40323D4272503ACED /* Pods_BitcoinRate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitcoinRate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +187,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FECF18B0CE0B6207B215568 /* Pods_BitcoinRate.framework in Frameworks */,
+				1152CECED45F0881637FFD76 /* Pods_BitcoinRate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +195,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C8D081372231B544FBC58D8 /* Pods_BitcoinRateTests.framework in Frameworks */,
+				3524E8466A758D86B2DFB290 /* Pods_BitcoinRateTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,21 +203,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84673808F336D7FFB57728C7 /* Pods_BitcoinRateUITests.framework in Frameworks */,
+				773361C9AED73E14A99E411E /* Pods_BitcoinRateUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8399291220A1DD6D00208440 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F90414FB2916556F08A2B90 /* Pods_Watch_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE368BC39EA06F49591B76AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86ABD7CA66038EA1BB44DCFB /* Pods_Watch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1378F3DE7000A8E141C82115 /* Frameworks */ = {
+		3DD7BF7F76F686216F552A5C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0C07CCB994C94FB39D633BBC /* Pods_BitcoinRate.framework */,
-				D08C3D83496BA09155DD2816 /* Pods_BitcoinRateTests.framework */,
-				9CC9CB5712A2060ACC664B40 /* Pods_BitcoinRateUITests.framework */,
+				8CB023936371999AF9308E2D /* Pods-Watch.debug.xcconfig */,
+				17E75659E6361FF25B362D6D /* Pods-Watch.development.xcconfig */,
+				864E2EDF4037C6224D0897DC /* Pods-Watch.release.xcconfig */,
+				CB108C0C6C2CFB6015354840 /* Pods-Watch Extension.debug.xcconfig */,
+				750A4806E07096206066F203 /* Pods-Watch Extension.development.xcconfig */,
+				2E742DB7D3883EDED0C39BEF /* Pods-Watch Extension.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		8399288020A1849400208440 = {
@@ -146,9 +245,11 @@
 				8399288B20A1849400208440 /* BitcoinRate */,
 				839928A220A1849500208440 /* BitcoinRateTests */,
 				839928AD20A1849500208440 /* BitcoinRateUITests */,
+				8399290A20A1DD6C00208440 /* Watch */,
+				8399291920A1DD6D00208440 /* Watch Extension */,
 				8399288A20A1849400208440 /* Products */,
-				A13283BC79146F3A9E46D257 /* Pods */,
-				1378F3DE7000A8E141C82115 /* Frameworks */,
+				3DD7BF7F76F686216F552A5C /* Pods */,
+				9864A5B650C8E080B0B058B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,6 +259,8 @@
 				8399288920A1849400208440 /* BitcoinRate.app */,
 				8399289F20A1849500208440 /* BitcoinRateTests.xctest */,
 				839928AA20A1849500208440 /* BitcoinRateUITests.xctest */,
+				8399290920A1DD6C00208440 /* Watch.app */,
+				8399291520A1DD6D00208440 /* Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,8 +280,10 @@
 		839928A220A1849500208440 /* BitcoinRateTests */ = {
 			isa = PBXGroup;
 			children = (
-				839928A320A1849500208440 /* BitcoinRateTests.swift */,
+				8399293520A1F49000208440 /* Ressources */,
 				839928A520A1849500208440 /* Info.plist */,
+				8399293320A1F34B00208440 /* MainViewModelTests.swift */,
+				8399293E20A1FAFA00208440 /* CacheTests.swift */,
 			);
 			path = BitcoinRateTests;
 			sourceTree = "<group>";
@@ -301,10 +406,10 @@
 		839928CF20A188CC00208440 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				8399290520A1CE9600208440 /* CachedWebservice.swift */,
 				839928C320A1881E00208440 /* NetworkManager.swift */,
 				839928D720A18A6A00208440 /* Router.swift */,
 				839928F220A1A8FE00208440 /* NetworkMockTest.swift */,
-				8399290520A1CE9600208440 /* CachedWebservice.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -338,11 +443,49 @@
 			path = HistoryRateCell;
 			sourceTree = "<group>";
 		};
-		A13283BC79146F3A9E46D257 /* Pods */ = {
+		8399290A20A1DD6C00208440 /* Watch */ = {
 			isa = PBXGroup;
 			children = (
+				8399290B20A1DD6C00208440 /* Interface.storyboard */,
+				8399290E20A1DD6D00208440 /* Assets.xcassets */,
+				8399291020A1DD6D00208440 /* Info.plist */,
 			);
-			name = Pods;
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		8399291920A1DD6D00208440 /* Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8399293120A1E41C00208440 /* RateTableRowController.swift */,
+				8399291A20A1DD6D00208440 /* InterfaceController.swift */,
+				8399291C20A1DD6D00208440 /* ExtensionDelegate.swift */,
+				8399291E20A1DD6D00208440 /* NotificationController.swift */,
+				8399292020A1DD6E00208440 /* Assets.xcassets */,
+				8399292220A1DD6E00208440 /* Info.plist */,
+				8399292320A1DD6E00208440 /* PushNotificationPayload.apns */,
+			);
+			path = "Watch Extension";
+			sourceTree = "<group>";
+		};
+		8399293520A1F49000208440 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				8399293620A1F4A500208440 /* current.json */,
+				8399293920A1F53200208440 /* history.json */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		9864A5B650C8E080B0B058B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D21B71B40323D4272503ACED /* Pods_BitcoinRate.framework */,
+				1D41E954697F5C47F818E6C1 /* Pods_BitcoinRateTests.framework */,
+				CDD30EB0510E61D425D9A66A /* Pods_BitcoinRateUITests.framework */,
+				2AD2CC2EE9F34E5CE984A298 /* Pods_Watch.framework */,
+				923A4381AA02F8211DA908C4 /* Pods_Watch_Extension.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,15 +495,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 839928B320A1849500208440 /* Build configuration list for PBXNativeTarget "BitcoinRate" */;
 			buildPhases = (
-				6CEC4ABD5D90D0B98979BFE1 /* [CP] Check Pods Manifest.lock */,
+				64D596B06D876CCCD70E8F9E /* [CP] Check Pods Manifest.lock */,
 				8399288520A1849400208440 /* Sources */,
 				8399288620A1849400208440 /* Frameworks */,
 				8399288720A1849400208440 /* Resources */,
-				03A0E6040FF6E65B0215674A /* [CP] Embed Pods Frameworks */,
+				8399293020A1DD6E00208440 /* Embed Watch Content */,
+				D0D79A13581CD07BF09F3D01 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8399292520A1DD6E00208440 /* PBXTargetDependency */,
 			);
 			name = BitcoinRate;
 			productName = BitcoinRate;
@@ -371,11 +516,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 839928B620A1849500208440 /* Build configuration list for PBXNativeTarget "BitcoinRateTests" */;
 			buildPhases = (
-				BC19F6C8BA6FD45367476644 /* [CP] Check Pods Manifest.lock */,
+				2ACB3F613C8C5C29E8023EC2 /* [CP] Check Pods Manifest.lock */,
 				8399289B20A1849500208440 /* Sources */,
 				8399289C20A1849500208440 /* Frameworks */,
 				8399289D20A1849500208440 /* Resources */,
-				21C201C077E23BE987986985 /* [CP] Embed Pods Frameworks */,
+				9857D9467A56BDC01F2AA5D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -391,11 +536,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 839928B920A1849500208440 /* Build configuration list for PBXNativeTarget "BitcoinRateUITests" */;
 			buildPhases = (
-				783FEBEA49134F7039FBB4EE /* [CP] Check Pods Manifest.lock */,
+				0CDEA2B22BFAD2C134303782 /* [CP] Check Pods Manifest.lock */,
 				839928A620A1849500208440 /* Sources */,
 				839928A720A1849500208440 /* Frameworks */,
 				839928A820A1849500208440 /* Resources */,
-				39D8E1D915927745E103D244 /* [CP] Embed Pods Frameworks */,
+				0387336EA4C373FE2705B86C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -406,6 +551,43 @@
 			productName = BitcoinRateUITests;
 			productReference = 839928AA20A1849500208440 /* BitcoinRateUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		8399290820A1DD6C00208440 /* Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8399292C20A1DD6E00208440 /* Build configuration list for PBXNativeTarget "Watch" */;
+			buildPhases = (
+				F180D59F74DE2A65DF6BD5A5 /* [CP] Check Pods Manifest.lock */,
+				8399290720A1DD6C00208440 /* Resources */,
+				8399292B20A1DD6E00208440 /* Embed App Extensions */,
+				BE368BC39EA06F49591B76AF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8399291820A1DD6D00208440 /* PBXTargetDependency */,
+			);
+			name = Watch;
+			productName = Watch;
+			productReference = 8399290920A1DD6C00208440 /* Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8399291420A1DD6D00208440 /* Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8399292720A1DD6E00208440 /* Build configuration list for PBXNativeTarget "Watch Extension" */;
+			buildPhases = (
+				A4EEA7AE309E3A67548CDA94 /* [CP] Check Pods Manifest.lock */,
+				8399291120A1DD6D00208440 /* Sources */,
+				8399291220A1DD6D00208440 /* Frameworks */,
+				8399291320A1DD6D00208440 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Watch Extension";
+			productName = "Watch Extension";
+			productReference = 8399291520A1DD6D00208440 /* Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -428,6 +610,12 @@
 						CreatedOnToolsVersion = 9.3;
 						TestTargetID = 8399288820A1849400208440;
 					};
+					8399290820A1DD6C00208440 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					8399291420A1DD6D00208440 = {
+						CreatedOnToolsVersion = 9.3;
+					};
 				};
 			};
 			buildConfigurationList = 8399288420A1849400208440 /* Build configuration list for PBXProject "BitcoinRate" */;
@@ -446,6 +634,8 @@
 				8399288820A1849400208440 /* BitcoinRate */,
 				8399289E20A1849500208440 /* BitcoinRateTests */,
 				839928A920A1849500208440 /* BitcoinRateUITests */,
+				8399290820A1DD6C00208440 /* Watch */,
+				8399291420A1DD6D00208440 /* Watch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -457,7 +647,9 @@
 			files = (
 				8399289920A1849500208440 /* LaunchScreen.storyboard in Resources */,
 				8399289620A1849500208440 /* Assets.xcassets in Resources */,
+				8399293D20A1F5EF00208440 /* current.json in Resources */,
 				839928F920A1AD1D00208440 /* HistoryRateCell.xib in Resources */,
+				8399293A20A1F53200208440 /* history.json in Resources */,
 				8399289420A1849400208440 /* Main.storyboard in Resources */,
 				839928BD20A1856D00208440 /* HeaderView.xib in Resources */,
 			);
@@ -467,6 +659,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8399293720A1F4A500208440 /* current.json in Resources */,
+				8399293B20A1F53200208440 /* history.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,46 +671,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8399290720A1DD6C00208440 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8399290F20A1DD6D00208440 /* Assets.xcassets in Resources */,
+				8399290D20A1DD6C00208440 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8399291320A1DD6D00208440 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8399292120A1DD6E00208440 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		03A0E6040FF6E65B0215674A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-BitcoinRate/Pods-BitcoinRate-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/StringExtensionHTML/StringExtensionHTML.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StringExtensionHTML.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitcoinRate/Pods-BitcoinRate-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		21C201C077E23BE987986985 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-BitcoinRateTests/Pods-BitcoinRateTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/StringExtensionHTML/StringExtensionHTML.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StringExtensionHTML.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitcoinRateTests/Pods-BitcoinRateTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		39D8E1D915927745E103D244 /* [CP] Embed Pods Frameworks */ = {
+		0387336EA4C373FE2705B86C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -534,25 +709,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitcoinRateUITests/Pods-BitcoinRateUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6CEC4ABD5D90D0B98979BFE1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BitcoinRate-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		783FEBEA49134F7039FBB4EE /* [CP] Check Pods Manifest.lock */ = {
+		0CDEA2B22BFAD2C134303782 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -570,7 +727,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BC19F6C8BA6FD45367476644 /* [CP] Check Pods Manifest.lock */ = {
+		2ACB3F613C8C5C29E8023EC2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -582,6 +739,96 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-BitcoinRateTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64D596B06D876CCCD70E8F9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitcoinRate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9857D9467A56BDC01F2AA5D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BitcoinRateTests/Pods-BitcoinRateTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/StringExtensionHTML/StringExtensionHTML.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StringExtensionHTML.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitcoinRateTests/Pods-BitcoinRateTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4EEA7AE309E3A67548CDA94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Watch Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0D79A13581CD07BF09F3D01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BitcoinRate/Pods-BitcoinRate-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/StringExtensionHTML/StringExtensionHTML.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StringExtensionHTML.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitcoinRate/Pods-BitcoinRate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F180D59F74DE2A65DF6BD5A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Watch-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -624,7 +871,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				839928A420A1849500208440 /* BitcoinRateTests.swift in Sources */,
+				8399293820A1F4D200208440 /* HistoryRateCellModel.swift in Sources */,
+				8399293C20A1F59400208440 /* HistoryRate.swift in Sources */,
+				8399293F20A1FAFA00208440 /* CacheTests.swift in Sources */,
+				8399293420A1F34B00208440 /* MainViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,6 +883,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				839928AF20A1849500208440 /* BitcoinRateUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8399291120A1DD6D00208440 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8399291F20A1DD6D00208440 /* NotificationController.swift in Sources */,
+				8399291D20A1DD6D00208440 /* ExtensionDelegate.swift in Sources */,
+				8399291B20A1DD6D00208440 /* InterfaceController.swift in Sources */,
+				8399293220A1E41C00208440 /* RateTableRowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,6 +909,16 @@
 			isa = PBXTargetDependency;
 			target = 8399288820A1849400208440 /* BitcoinRate */;
 			targetProxy = 839928AB20A1849500208440 /* PBXContainerItemProxy */;
+		};
+		8399291820A1DD6D00208440 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8399291420A1DD6D00208440 /* Watch Extension */;
+			targetProxy = 8399291720A1DD6D00208440 /* PBXContainerItemProxy */;
+		};
+		8399292520A1DD6E00208440 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8399290820A1DD6C00208440 /* Watch */;
+			targetProxy = 8399292420A1DD6E00208440 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -666,6 +937,14 @@
 				8399289820A1849500208440 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8399290B20A1DD6C00208440 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8399290C20A1DD6C00208440 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1037,6 +1316,153 @@
 			};
 			name = Development;
 		};
+		8399292820A1DD6E00208440 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB108C0C6C2CFB6015354840 /* Pods-Watch Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K7WV5867K9;
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				OTHER_CFLAGS = "-iquote";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = test.bit.BitcoinRate.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		8399292920A1DD6E00208440 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 750A4806E07096206066F203 /* Pods-Watch Extension.development.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K7WV5867K9;
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				OTHER_CFLAGS = "-iquote";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = test.bit.BitcoinRate.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Development;
+		};
+		8399292A20A1DD6E00208440 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E742DB7D3883EDED0C39BEF /* Pods-Watch Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K7WV5867K9;
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				OTHER_CFLAGS = "-iquote";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = test.bit.BitcoinRate.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		8399292D20A1DD6E00208440 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CB023936371999AF9308E2D /* Pods-Watch.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K7WV5867K9;
+				FRAMEWORK_SEARCH_PATHS = "";
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				OTHER_CFLAGS = "-iquote";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = test.bit.BitcoinRate.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		8399292E20A1DD6E00208440 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17E75659E6361FF25B362D6D /* Pods-Watch.development.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K7WV5867K9;
+				FRAMEWORK_SEARCH_PATHS = "";
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				OTHER_CFLAGS = "-iquote";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = test.bit.BitcoinRate.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Development;
+		};
+		8399292F20A1DD6E00208440 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 864E2EDF4037C6224D0897DC /* Pods-Watch.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K7WV5867K9;
+				FRAMEWORK_SEARCH_PATHS = "";
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				OTHER_CFLAGS = "-iquote";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = test.bit.BitcoinRate.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1076,6 +1502,26 @@
 				839928BA20A1849500208440 /* Debug */,
 				839928E520A18C1D00208440 /* Development */,
 				839928BB20A1849500208440 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8399292720A1DD6E00208440 /* Build configuration list for PBXNativeTarget "Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8399292820A1DD6E00208440 /* Debug */,
+				8399292920A1DD6E00208440 /* Development */,
+				8399292A20A1DD6E00208440 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8399292C20A1DD6E00208440 /* Build configuration list for PBXNativeTarget "Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8399292D20A1DD6E00208440 /* Debug */,
+				8399292E20A1DD6E00208440 /* Development */,
+				8399292F20A1DD6E00208440 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
