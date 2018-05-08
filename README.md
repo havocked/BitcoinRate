@@ -21,7 +21,7 @@ $> sudo gem install cocoapods
 $> pod install
 ```
 
-It will generate a file **MusicPlayer.xcworkspace**. Open the project with it (not with MusicPlayer.xcodeproj)
+It will generate a file **BitcoinRate.xcworkspace**. Open the project with it (not with BitcoinRate.xcodeproj)
 
 ## Project Architecture
 
@@ -35,30 +35,15 @@ When possible, MVVM is used.
 
 ## Known issues
 
-- No possibilities to switch forward or backward between songs
-- The Apple Music API has a limit when fetching the top charts (limit of 50)
-
-⚠️ The implementation of this project is basic and doesn't handle the token refresh (for the use of Apple Music API). ⚠️ 
-
-You will have to manually refresh it using the [Apple documentation](https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/AppleMusicWebServicesReference/SetUpWebServices.html#//apple_ref/doc/uid/TP40017625-CH2-SW1) and also [this helper](https://github.com/pelauimagineering/apple-music-token-generator) to generate the token.
-
-When you get this token, you have to manually place it in the config files :
-
-*MusicPlayer -> Supporting Files -> Config -> Development/Debug/Release.xcconfig*
-
-replace the value for the key **APPLE_MUSIC_KEY**
+//TODO
 
 ## Cocoapods
 
-Two frameworks are used with Cocoapods:
+One frameworks is used with Cocoapods:
 
-#### Kingfisher
+#### StringExtensionHTML
 
-Really good pod to handle loading and caching of images from urls.
-
-#### KDEAudioPlayer
-
-AudioPlayer is a wrapper around AVPlayer and also offers cool features.
+Small helper to nicely convert html code to formatted string. (Coindesk api returns symbols' codes)
 
 ## Testing
 
