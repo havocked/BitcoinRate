@@ -1,4 +1,4 @@
-# Technical Challenge
+# BitcoinRate
 
 Hi, fellow Reviewer,
 
