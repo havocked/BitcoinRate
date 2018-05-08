@@ -1,0 +1,13 @@
+//
+//  Debug.xcconfig
+//  BitcoinRate
+//
+//  Created by Anonymous
+//
+
+#include "Pods/Target Support Files/Pods-BitcoinRate/Pods-BitcoinRate.debug.xcconfig"
+#include "Pods/Target Support Files/Pods-BitcoinRateTests/Pods-BitcoinRateTests.debug.xcconfig"
+#include "Pods/Target Support Files/Pods-BitcoinRateUITests/Pods-BitcoinRateUITests.debug.xcconfig"
+
+COINDESK_API_BASE_URL = api.coindesk.com
+COINDESK_API_VERSION = v1
