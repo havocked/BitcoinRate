@@ -9,8 +9,8 @@
 import Foundation
 
 
-struct FileStorage {
-    private let baseURL: URL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+fileprivate struct FileStorage {
+    private let baseURL: URL = try! FileManager.default.url(for: .cachesDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
     
     subscript(key: String) -> Data? {
         get { return try? Data(contentsOf: baseURL.appendingPathComponent(key)) }
@@ -29,6 +29,7 @@ struct FileStorage {
     }
 }
 
+/// Cache class is managing the loading and saving of ressources gotten from specific Router objects
 final class Cache {
     private var storage = FileStorage()
     
@@ -55,12 +56,13 @@ final class Cache {
         storage[resource.cacheKey] = encodedResult
     }
     
+    /// Delete all data stored in cache
     func clearCache() {
         storage.clearDiskCache()
     }
 }
 
-/// This class uses The network manager, which usually implements the NetworkRessource protocol, but here CachedWebservice will implement its own, so that we can seperate cache logic and network calls.
+/// CachedWebservice uses the NetworkManager class, which usually is the one which implements the NetworkRessource protocol. Here CachedWebservice will implement its own, so that we can seperate cache logic and network calls.
 struct CachedWebservice : NetworkRessource {
     private let networkManager = NetworkManager()
     private let cache = Cache()

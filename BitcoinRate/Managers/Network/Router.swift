@@ -40,7 +40,7 @@ enum Router {
         }
     }
     
-    fileprivate var requestHeaders: [String:String] {
+    var requestHeaders: [String:String] {
         var headers = [String:String]()
         
         switch self {
@@ -53,7 +53,7 @@ enum Router {
         return headers
     }
     
-    fileprivate var queryItems: [URLQueryItem]? {
+    var queryItems: [URLQueryItem]? {
         switch self {
         case .currentRate:
             return nil

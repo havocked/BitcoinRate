@@ -10,6 +10,10 @@ import WatchKit
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
+    override init() {
+        super.init()
+    }
+    
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
     }

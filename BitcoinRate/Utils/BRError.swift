@@ -11,7 +11,7 @@ import UIKit
 
 
 /// Custom Error enum for the project
-public enum BRError {
+enum BRError {
     
     case error(Error)
     case message(title:String, message: String)
@@ -40,7 +40,7 @@ public enum BRError {
 }
 
 extension BRError : CustomStringConvertible {
-    public var description: String {
+    var description: String {
         get {
             switch self {
             case .error(let error):

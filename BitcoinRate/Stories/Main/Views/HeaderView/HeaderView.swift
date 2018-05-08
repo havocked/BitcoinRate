@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class HeaderView: NibSettable {
+final class HeaderView: NibSettable {
     @IBOutlet weak var centeredLabel: UILabel!
     
     override func setupUI() {

@@ -12,17 +12,17 @@ class NibSettable: UIView {
     
     var contentView: UIView!
     
-    public required init?(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.xibSetup()
     }
     
-    public override init(frame: CGRect) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
         self.xibSetup()
     }
     
-    fileprivate func xibSetup() {
+    private func xibSetup() {
         self.contentView = loadViewFromNib()
         self.addSubview(self.contentView)
         self.contentView.frame = bounds
@@ -30,7 +30,7 @@ class NibSettable: UIView {
         setupUI()
     }
     
-    fileprivate func loadViewFromNib() -> UIView {
+    private func loadViewFromNib() -> UIView {
         
         let bundle = Bundle(for: type(of: self))
         let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)

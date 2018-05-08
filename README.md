@@ -39,7 +39,7 @@ When possible, MVVM is used.
 
 ## Cocoapods
 
-One frameworks is used with Cocoapods:
+One framework is used with Cocoapods:
 
 #### StringExtensionHTML
 

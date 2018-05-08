@@ -8,25 +8,25 @@
 
 import WatchKit
 import Foundation
+import WatchConnectivity
 
-
-class InterfaceController: WKInterfaceController {
+final class InterfaceController: WKInterfaceController {
 
     @IBOutlet var topLabel: WKInterfaceLabel!
     @IBOutlet var historyTable: WKInterfaceTable!
     
-    let result = ["1700.56", "1845.45", "1300.00", "13335.23", "134.02", "12345.34", "4567", "2345.67"]
+    private var viewModel = InterfaceViewModel()
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
+        viewModel.delegate = self
         // Configure interface objects here.
     }
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
-        loadTableData()
+        viewModel.retreiveData()
     }
     
     override func didDeactivate() {
@@ -34,17 +34,29 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
-    private func loadTableData() {
+//    private func loadTableData() {
+//
+//        topLabel.setText("Current Rate\n17000.34 €")
+//
+//        historyTable.setNumberOfRows(result.count, withRowType: "rateTableRowController")
+//
+//        for (index, data) in result.enumerated() {
+//            let row = historyTable.rowController(at: index) as! RateTableRowController
+//            row.topLabel.setText("\(data) €")
+//            row.bottomLabel.setText("07-11-1989")
+//        }
+    //    }
+    
+}
+
+extension InterfaceController : InterfaceViewModelDelegate {
+    func interfaceViewModel(model: InterfaceViewModel, didUpdate data: [ProcessedData]) {
+        historyTable.setNumberOfRows(data.count, withRowType: "rateTableRowController")
         
-        topLabel.setText("Current Rate\n17000.34 €")
-        
-        historyTable.setNumberOfRows(result.count, withRowType: "rateTableRowController")
-        
-        for (index, data) in result.enumerated() {
+        for (index, data) in data.enumerated() {
             let row = historyTable.rowController(at: index) as! RateTableRowController
-            row.topLabel.setText("\(data) €")
-            row.bottomLabel.setText("07-11-1989")
+            row.topLabel.setText(data.title)
+            row.bottomLabel.setText(data.date)
         }
     }
-    
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HistoryRateCell: UITableViewCell, EasyRegisteredCell {
+final class HistoryRateCell: UITableViewCell, EasyRegisteredCell {
 
     @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var bottomLabel: UILabel!

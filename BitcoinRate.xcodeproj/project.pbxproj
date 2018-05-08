@@ -56,6 +56,9 @@
 		8399293C20A1F59400208440 /* HistoryRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839928F420A1AA3700208440 /* HistoryRate.swift */; };
 		8399293D20A1F5EF00208440 /* current.json in Resources */ = {isa = PBXBuildFile; fileRef = 8399293620A1F4A500208440 /* current.json */; };
 		8399293F20A1FAFA00208440 /* CacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8399293E20A1FAFA00208440 /* CacheTests.swift */; };
+		83AF630120A23AFC00E1E754 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF630020A23AFC00E1E754 /* WatchSessionManager.swift */; };
+		83AF630320A240CA00E1E754 /* PhoneSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF630220A240CA00E1E754 /* PhoneSessionManager.swift */; };
+		83AF630720A2482F00E1E754 /* InterfaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF630620A2482F00E1E754 /* InterfaceViewModel.swift */; };
 		86ABD7CA66038EA1BB44DCFB /* Pods_Watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD2CC2EE9F34E5CE984A298 /* Pods_Watch.framework */; };
 /* End PBXBuildFile section */
 
@@ -174,6 +177,9 @@
 		8399293620A1F4A500208440 /* current.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = current.json; sourceTree = "<group>"; };
 		8399293920A1F53200208440 /* history.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = history.json; sourceTree = "<group>"; };
 		8399293E20A1FAFA00208440 /* CacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheTests.swift; sourceTree = "<group>"; };
+		83AF630020A23AFC00E1E754 /* WatchSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
+		83AF630220A240CA00E1E754 /* PhoneSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneSessionManager.swift; sourceTree = "<group>"; };
+		83AF630620A2482F00E1E754 /* InterfaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceViewModel.swift; sourceTree = "<group>"; };
 		864E2EDF4037C6224D0897DC /* Pods-Watch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Watch/Pods-Watch.release.xcconfig"; sourceTree = "<group>"; };
 		8CB023936371999AF9308E2D /* Pods-Watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Watch/Pods-Watch.debug.xcconfig"; sourceTree = "<group>"; };
 		923A4381AA02F8211DA908C4 /* Pods_Watch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -272,7 +278,6 @@
 				839928C620A1885100208440 /* Managers */,
 				839928C920A1887A00208440 /* Utils */,
 				839928C520A1882D00208440 /* Supporting Files */,
-				839928C120A1875A00208440 /* NibSettable.swift */,
 			);
 			path = BitcoinRate;
 			sourceTree = "<group>";
@@ -322,6 +327,7 @@
 			isa = PBXGroup;
 			children = (
 				839928CF20A188CC00208440 /* Network */,
+				83AF630020A23AFC00E1E754 /* WatchSessionManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -352,6 +358,7 @@
 				839928D220A1893F00208440 /* Extensions */,
 				839928D020A1890300208440 /* BRError.swift */,
 				839928FB20A1AD4E00208440 /* ReusableView.swift */,
+				839928C120A1875A00208440 /* NibSettable.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -456,13 +463,13 @@
 		8399291920A1DD6D00208440 /* Watch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				83AF630520A2481D00E1E754 /* ViewModels */,
+				83AF630420A247B600E1E754 /* Supporting Files */,
+				83AF630220A240CA00E1E754 /* PhoneSessionManager.swift */,
 				8399293120A1E41C00208440 /* RateTableRowController.swift */,
 				8399291A20A1DD6D00208440 /* InterfaceController.swift */,
 				8399291C20A1DD6D00208440 /* ExtensionDelegate.swift */,
 				8399291E20A1DD6D00208440 /* NotificationController.swift */,
-				8399292020A1DD6E00208440 /* Assets.xcassets */,
-				8399292220A1DD6E00208440 /* Info.plist */,
-				8399292320A1DD6E00208440 /* PushNotificationPayload.apns */,
 			);
 			path = "Watch Extension";
 			sourceTree = "<group>";
@@ -474,6 +481,24 @@
 				8399293920A1F53200208440 /* history.json */,
 			);
 			path = Ressources;
+			sourceTree = "<group>";
+		};
+		83AF630420A247B600E1E754 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8399292020A1DD6E00208440 /* Assets.xcassets */,
+				8399292220A1DD6E00208440 /* Info.plist */,
+				8399292320A1DD6E00208440 /* PushNotificationPayload.apns */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83AF630520A2481D00E1E754 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				83AF630620A2482F00E1E754 /* InterfaceViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		9864A5B650C8E080B0B058B4 /* Frameworks */ = {
@@ -844,6 +869,7 @@
 			files = (
 				8399288F20A1849400208440 /* MainViewController.swift in Sources */,
 				839928EB20A1906B00208440 /* HistoryRateResponse.swift in Sources */,
+				83AF630120A23AFC00E1E754 /* WatchSessionManager.swift in Sources */,
 				839928F320A1A8FE00208440 /* NetworkMockTest.swift in Sources */,
 				839928D420A1894E00208440 /* String+Extension.swift in Sources */,
 				839928FE20A1ADD500208440 /* HistoryRateCellModel.swift in Sources */,
@@ -890,9 +916,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83AF630720A2482F00E1E754 /* InterfaceViewModel.swift in Sources */,
 				8399291F20A1DD6D00208440 /* NotificationController.swift in Sources */,
 				8399291D20A1DD6D00208440 /* ExtensionDelegate.swift in Sources */,
 				8399291B20A1DD6D00208440 /* InterfaceController.swift in Sources */,
+				83AF630320A240CA00E1E754 /* PhoneSessionManager.swift in Sources */,
 				8399293220A1E41C00208440 /* RateTableRowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1324,7 +1352,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K7WV5867K9;
 				FRAMEWORK_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Watch Extension/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1350,7 +1378,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K7WV5867K9;
 				FRAMEWORK_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Watch Extension/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1376,7 +1404,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K7WV5867K9;
 				FRAMEWORK_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Watch Extension/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

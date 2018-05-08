@@ -8,8 +8,7 @@
 
 import WatchKit
 
-class RateTableRowController: NSObject {
-    
+final class RateTableRowController: NSObject {
     @IBOutlet var topLabel: WKInterfaceLabel!
     @IBOutlet var bottomLabel: WKInterfaceLabel!
 }

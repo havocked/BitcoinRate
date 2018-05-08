@@ -15,18 +15,18 @@ protocol NetworkRessource {
     func fetchHistoryRate(from fromDate: Date, to toDate: Date, currency: String, completionHandler: @escaping (HistoryRateResponse) -> (), failureHandler: @escaping FailureHandler)
 }
 
-public typealias FailureHandler = (BRError)->(Void)
+typealias FailureHandler = (BRError)->(Void)
 
 struct NetworkManager {
     
-    public static let `default` = NetworkManager()
+    static let `default` = NetworkManager()
     
     // MARK: Methods
     
     init() { }
     
     @discardableResult
-    public func callRequest<T: Codable>(request: URLRequest, withSuccess success: @escaping (T)->Void, andFailure failure: @escaping FailureHandler) -> URLSessionDataTask {
+    func callRequest<T: Codable>(request: URLRequest, withSuccess success: @escaping (T)->Void, andFailure failure: @escaping FailureHandler) -> URLSessionDataTask {
       
         let configuration = URLSessionConfiguration.default
         let session = URLSession(configuration: configuration)

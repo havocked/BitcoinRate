@@ -31,6 +31,8 @@ final class MainViewController: UIViewController {
     
 }
 
+// MARK: MainViewModel Delegates
+
 extension MainViewController: MainViewModelDelegate {
     func mainViewModel(model: MainViewModel, update headerViewModel: HeaderViewModel) {
         self.headerView.configure(with: headerViewModel)
@@ -47,6 +49,8 @@ extension MainViewController: MainViewModelDelegate {
         self.present(alert, animated: true, completion: nil)
     }
 }
+
+// MARK: UITableView Delegates / Datasources
 
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -66,6 +70,10 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "History rate"
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        WatchSessionManager.default.updateApplicationContext()
     }
 }
 
