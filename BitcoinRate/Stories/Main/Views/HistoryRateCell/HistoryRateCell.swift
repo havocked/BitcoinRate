@@ -15,8 +15,8 @@ class HistoryRateCell: UITableViewCell, EasyRegisteredCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        topLabel.font = UIFont.boldSystemFont(ofSize: 20)
-        bottomLabel.font = UIFont.systemFont(ofSize: 16)
+        topLabel.font = UIFont.boldSystemFont(ofSize: 18)
+        bottomLabel.font = UIFont.systemFont(ofSize: 12)
         
         topLabel.textColor = UIColor.darkText
         bottomLabel.textColor = UIColor.darkGray

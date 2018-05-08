@@ -13,7 +13,9 @@ class HeaderView: NibSettable {
     @IBOutlet weak var centeredLabel: UILabel!
     
     override func setupUI() {
-        centeredLabel.text = "yolo"
+        centeredLabel.text = ""
+        self.centeredLabel.font = UIFont.boldSystemFont(ofSize: 20)
+        self.contentView.backgroundColor = UIColor.groupTableViewBackground
     }
 
     func configure(with model: HeaderViewModel) {

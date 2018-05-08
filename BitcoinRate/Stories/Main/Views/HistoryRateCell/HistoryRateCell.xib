@@ -21,26 +21,26 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuE-Qm-Plm">
-                        <rect key="frame" x="36" y="19" width="248" height="21"/>
+                        <rect key="frame" x="16" y="11" width="288" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2I-oy-EXj">
-                        <rect key="frame" x="36" y="48" width="248" height="71"/>
+                        <rect key="frame" x="16" y="40" width="288" height="87"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="nuE-Qm-Plm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="7Rh-sI-eO7"/>
+                    <constraint firstItem="nuE-Qm-Plm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="7Rh-sI-eO7"/>
                     <constraint firstItem="X2I-oy-EXj" firstAttribute="top" secondItem="nuE-Qm-Plm" secondAttribute="bottom" constant="8" id="EOL-5o-p8M"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="X2I-oy-EXj" secondAttribute="bottom" constant="8" id="Ig7-ga-t2h"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="nuE-Qm-Plm" secondAttribute="trailing" constant="20" id="M4G-xG-X33"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="X2I-oy-EXj" secondAttribute="trailing" constant="20" id="WUL-iF-KX1"/>
-                    <constraint firstItem="X2I-oy-EXj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="YTR-Lq-Ize"/>
-                    <constraint firstItem="nuE-Qm-Plm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="cbz-Gc-9Qq"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="X2I-oy-EXj" secondAttribute="bottom" id="Ig7-ga-t2h"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="nuE-Qm-Plm" secondAttribute="trailing" id="M4G-xG-X33"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="X2I-oy-EXj" secondAttribute="trailing" id="WUL-iF-KX1"/>
+                    <constraint firstItem="X2I-oy-EXj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="YTR-Lq-Ize"/>
+                    <constraint firstItem="nuE-Qm-Plm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="cbz-Gc-9Qq"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

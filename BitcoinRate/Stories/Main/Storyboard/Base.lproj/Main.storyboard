@@ -20,11 +20,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CoK-Cg-VHT" customClass="HeaderView" customModule="BitcoinRate" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="20" width="375" height="167"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tLO-Nc-Slz">
-                                <rect key="frame" x="0.0" y="187" width="375" height="480"/>
+                                <rect key="frame" x="0.0" y="167" width="375" height="500"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -34,7 +34,7 @@
                             <constraint firstItem="CoK-Cg-VHT" firstAttribute="height" secondItem="LgJ-iU-VUd" secondAttribute="height" multiplier="0.25" id="AFy-6F-kI7"/>
                             <constraint firstItem="KwW-9g-8MV" firstAttribute="trailing" secondItem="tLO-Nc-Slz" secondAttribute="trailing" id="J83-gQ-e2l"/>
                             <constraint firstItem="CoK-Cg-VHT" firstAttribute="leading" secondItem="KwW-9g-8MV" secondAttribute="leading" id="NbY-Q5-4X6"/>
-                            <constraint firstItem="CoK-Cg-VHT" firstAttribute="top" secondItem="KwW-9g-8MV" secondAttribute="top" id="Shi-2T-AHh"/>
+                            <constraint firstItem="CoK-Cg-VHT" firstAttribute="top" secondItem="LgJ-iU-VUd" secondAttribute="top" id="Shi-2T-AHh"/>
                             <constraint firstItem="KwW-9g-8MV" firstAttribute="trailing" secondItem="CoK-Cg-VHT" secondAttribute="trailing" id="h6y-dY-YAo"/>
                             <constraint firstItem="KwW-9g-8MV" firstAttribute="bottom" secondItem="tLO-Nc-Slz" secondAttribute="bottom" id="ibo-cp-DDH"/>
                             <constraint firstItem="tLO-Nc-Slz" firstAttribute="leading" secondItem="KwW-9g-8MV" secondAttribute="leading" id="z1g-cb-Vim"/>

@@ -64,5 +64,9 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         cell.configure(with: model)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "History rate"
+    }
 }
 
