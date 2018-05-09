@@ -21,14 +21,24 @@ final class MainViewController: UIViewController {
         self.historyTableView.delegate = self
         self.historyTableView.dataSource = self
         self.historyTableView.register(HistoryRateCell.self)
+        self.addRefreshControl()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        refreshAction()
+    }
+    
+    func addRefreshControl() {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refreshAction), for: .valueChanged)
+        self.historyTableView.refreshControl = refreshControl
+    }
+    
+    @objc private func refreshAction() {
         viewModel.getCurrentRate()
         viewModel.getHistoryRates()
     }
-    
 }
 
 // MARK: MainViewModel Delegates
@@ -39,6 +49,7 @@ extension MainViewController: MainViewModelDelegate {
     }
    
     func mainViewModelDidUpdateHistory(model: MainViewModel) {
+        self.historyTableView.refreshControl?.endRefreshing()
         self.historyTableView.reloadData()
     }
     
@@ -70,10 +81,6 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "History rate"
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        WatchSessionManager.default.retreiveHistoryRates()
     }
 }
 

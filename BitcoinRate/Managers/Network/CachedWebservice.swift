@@ -7,8 +7,6 @@
 //
 
 import Foundation
-import PromiseKit
-
 
 fileprivate struct FileStorage {
     private let baseURL: URL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
@@ -73,7 +71,7 @@ struct CachedWebservice : NetworkRessource {
     }
     
     func fetchCurrentRate(completionHandler: @escaping (CurrentRateResponse) -> (), failureHandler: @escaping FailureHandler) {
-        clearCache()
+
         // Current rate always needs be fetched, but also cached. So if there is a cache, the completionHandler will be called 2 times.
         
         let router = Router.currentRate
@@ -89,7 +87,7 @@ struct CachedWebservice : NetworkRessource {
     }
     
     func fetchHistoryRate(from fromDate: Date, to toDate: Date, currency: String, completionHandler: @escaping (HistoryRateResponse) -> (), failureHandler: @escaping FailureHandler) {
-        clearCache()
+     
         // If there is a cache, then no need to do a network call.
         
         let router = Router.historyRate(start: fromDate, end: toDate, currency: currency)
@@ -102,28 +100,6 @@ struct CachedWebservice : NetworkRessource {
                 self.cache.save(response, for: router)
                 completionHandler(response)
             }, andFailure: failureHandler)
-        }
-    }
-}
-
-extension NetworkRessource {
-    func fetchCurrentRate() -> Promise<CurrentRateResponse> {
-        return Promise { seal in
-            fetchCurrentRate(completionHandler: { response in
-                seal.fulfill(response)
-            }, failureHandler: { (error) -> (Void) in
-                seal.reject(error)
-            })
-        }
-    }
-    
-    func fetchHistoryRate(from fromDate: Date, to toDate: Date, currency: String) -> Promise<HistoryRateResponse> {
-        return Promise { seal in
-            fetchHistoryRate(from: fromDate, to: toDate, currency: currency, completionHandler: { response in
-                seal.fulfill(response)
-            }, failureHandler: { error in
-                seal.reject(error)
-            })
         }
     }
 }

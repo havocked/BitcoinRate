@@ -41,7 +41,7 @@ class WatchSessionManager: NSObject, WCSessionDelegate {
         session?.activate()
     }
     
-    func retreiveHistoryRates() {
+    fileprivate func retreiveHistoryRates() {
         let endDate = Date()
         
         // Get the date 2 weeks before the current date
@@ -135,6 +135,30 @@ extension WatchSessionManager {
         
         if let _ = message[Keys.WatchAskUpdate] {
             retreiveHistoryRates()
+        }
+    }
+}
+
+// MARK: Extension for NetworkRessource in order to use PromiseKit Framework
+
+extension NetworkRessource {
+    func fetchCurrentRate() -> Promise<CurrentRateResponse> {
+        return Promise { seal in
+            fetchCurrentRate(completionHandler: { response in
+                seal.fulfill(response)
+            }, failureHandler: { (error) -> (Void) in
+                seal.reject(error)
+            })
+        }
+    }
+    
+    func fetchHistoryRate(from fromDate: Date, to toDate: Date, currency: String) -> Promise<HistoryRateResponse> {
+        return Promise { seal in
+            fetchHistoryRate(from: fromDate, to: toDate, currency: currency, completionHandler: { response in
+                seal.fulfill(response)
+            }, failureHandler: { error in
+                seal.reject(error)
+            })
         }
     }
 }

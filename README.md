@@ -33,17 +33,34 @@ A Story is composed of a Storyboard, ViewControllers, ViewModels and Views direc
 
 When possible, MVVM is used.
 
+## Watch Extension
+
+The extension uses WatchConnectivity framework to communicate with the iPhone.
+When the watch opens the app, it will wake up the iOS app with an Interactive message. The iOS app then will fetch the new data (cache and/or network) and returns it with the *updateApplicationContext* method.
+
+Note:
+
+We could also have used *URLSession* within the watch app. But, in order to not over complicate the project, we will stick with this process for now. 
+
+Watch ->         sendMessage          -> iOS
+                                          | Fetch new data
+      <-   updateApplicationContext   <-
+
 ## Known issues
 
 //TODO
 
 ## Cocoapods
 
-One framework is used with Cocoapods:
+Two framework are used with Cocoapods:
 
 #### StringExtensionHTML
 
 Small helper to nicely convert html code to formatted string. (Coindesk api returns symbols' codes)
+
+#### PromiseKit
+
+This pod is used in WatchSessionManager to combine nicely two network calls before returning both results to the Watch
 
 ## Testing
 
