@@ -61,6 +61,7 @@
 		83AF630A20A2EB3F00E1E754 /* PhoneSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF630920A2EB3F00E1E754 /* PhoneSessionManager.swift */; };
 		83AF630E20A3196D00E1E754 /* HistoryRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839928F420A1AA3700208440 /* HistoryRate.swift */; };
 		83AF631020A320A400E1E754 /* RateTableRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF630F20A320A400E1E754 /* RateTableRowModel.swift */; };
+		83FA1FA620A337670086A89F /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839928E820A18F0D00208440 /* Currency.swift */; };
 		86ABD7CA66038EA1BB44DCFB /* Pods_Watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD2CC2EE9F34E5CE984A298 /* Pods_Watch.framework */; };
 /* End PBXBuildFile section */
 
@@ -759,10 +760,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BitcoinRateUITests/Pods-BitcoinRateUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/StringExtensionHTML/StringExtensionHTML.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StringExtensionHTML.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -831,10 +834,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BitcoinRateTests/Pods-BitcoinRateTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/StringExtensionHTML/StringExtensionHTML.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StringExtensionHTML.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -867,10 +872,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BitcoinRate/Pods-BitcoinRate-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/StringExtensionHTML/StringExtensionHTML.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StringExtensionHTML.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -952,6 +959,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83FA1FA620A337670086A89F /* Currency.swift in Sources */,
 				83AF630A20A2EB3F00E1E754 /* PhoneSessionManager.swift in Sources */,
 				83AF630720A2482F00E1E754 /* InterfaceViewModel.swift in Sources */,
 				83AF630E20A3196D00E1E754 /* HistoryRate.swift in Sources */,

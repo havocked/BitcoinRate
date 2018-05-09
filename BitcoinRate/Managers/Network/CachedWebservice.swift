@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import PromiseKit
 
 
 fileprivate struct FileStorage {
@@ -101,6 +102,28 @@ struct CachedWebservice : NetworkRessource {
                 self.cache.save(response, for: router)
                 completionHandler(response)
             }, andFailure: failureHandler)
+        }
+    }
+}
+
+extension NetworkRessource {
+    func fetchCurrentRate() -> Promise<CurrentRateResponse> {
+        return Promise { seal in
+            fetchCurrentRate(completionHandler: { response in
+                seal.fulfill(response)
+            }, failureHandler: { (error) -> (Void) in
+                seal.reject(error)
+            })
+        }
+    }
+    
+    func fetchHistoryRate(from fromDate: Date, to toDate: Date, currency: String) -> Promise<HistoryRateResponse> {
+        return Promise { seal in
+            fetchHistoryRate(from: fromDate, to: toDate, currency: currency, completionHandler: { response in
+                seal.fulfill(response)
+            }, failureHandler: { error in
+                seal.reject(error)
+            })
         }
     }
 }

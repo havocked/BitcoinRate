@@ -8,6 +8,7 @@
 
 import WatchKit
 import WatchConnectivity
+import PromiseKit
 
 struct Keys {
     static let WatchAskUpdate = "WatchAskUpdate"
@@ -44,24 +45,29 @@ class WatchSessionManager: NSObject, WCSessionDelegate {
         let endDate = Date()
         
         // Get the date 2 weeks before the current date
-        let fromDate = Calendar.current.date(byAdding: .weekOfMonth, value: -2, to: endDate)
+        let fromDate = Calendar.current.date(byAdding: .weekOfMonth, value: -2, to: endDate) ?? Date()
         
         let currency = "EUR"
-        networkManager.fetchHistoryRate(from: fromDate!, to: endDate, currency: currency, completionHandler: { [unowned self] response in
-            do {
-                let result = MainViewModel.process(response, currency: currency)
-                let encodedResult = try JSONEncoder().encode(result)
-                try self.updateApplicationContext(applicationContext: ["result": encodedResult])
-            } catch {
-                print("Failed to update application context")
-            }
-        }) { error in
+        
+        let currentRateQuery = networkManager.fetchCurrentRate()
+        let historyQuery = networkManager.fetchHistoryRate(from: fromDate, to: endDate, currency: currency)
+        
+        firstly {
+            when(fulfilled: currentRateQuery, historyQuery)
+        }.done { currentRateResponse, historyResponse in
+            
+            let historyResult = MainViewModel.process(historyResponse, currency: currency)
+            let encoder = JSONEncoder()
+            let encodedHistoryResult = try encoder.encode(historyResult)
+            let currentRate = currentRateResponse.bpi[currency]!
+            let encodedCurrentRateResult = try encoder.encode(currentRate)
+            
+            try self.updateApplicationContext(applicationContext: ["history": encodedHistoryResult,
+                                                                   "currentRate": encodedCurrentRateResult])
+            
+        }.catch { error in
             print("Failed to fetch history - \(error)")
-            do {
-                try self.updateApplicationContext(applicationContext: ["Error": "Network failed"])
-            } catch {
-                print("Failed to update application context")
-            }
+            try? self.updateApplicationContext(applicationContext: ["Error": "Network failed"])
         }
     }
     

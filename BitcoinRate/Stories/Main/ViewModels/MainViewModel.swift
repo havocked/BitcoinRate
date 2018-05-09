@@ -72,7 +72,11 @@ final class MainViewModel {
     
     // MARK: Private methods
     
-    /// Process HistoryRateResponse to retreive and sort fetched rates by descending date
+    /**
+        Process HistoryRateResponse to retreive and sort fetched rates by descending date.
+        It's a static func so that both MainViewModel and WatchSessionsManager can use
+        it to convert data[HistoryRate]
+    */
     static func process(_ response: HistoryRateResponse, currency: String) -> [HistoryRate] {
         let result = response.bpi.compactMap({ (key, value) -> HistoryRate? in
             let rate = HistoryRate(dateString: key, rate: value, currency: currency)

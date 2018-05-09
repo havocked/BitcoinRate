@@ -32,15 +32,19 @@ class PhoneSessionManager: NSObject, WCSessionDelegate {
         return self.session.receivedApplicationContext
     }
     
+    // Session for Live messaging
+    private var validReachableSession: WCSession? {
+        if session.isReachable {
+            return session
+        }
+        return nil
+    }
+    
     func startSession() {
         session.delegate = self
         session.activate()
     }
     
-    /**
-     * Called when the session has completed activation.
-     * If session state is WCSessionActivationStateNotActivated there will be an error with more details.
-     */
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         if activationState == .activated {
             self.delegate?.phoneManagerIsReady(self)
@@ -49,38 +53,20 @@ class PhoneSessionManager: NSObject, WCSessionDelegate {
             print(err)
         }
     }
-}
-
-// MARK: Application Context
-// use when your app needs only the latest information
-// if the data was not sent, it will be replaced
-extension PhoneSessionManager {
     
-    // Receiver
+    // MARK: Application Context Receiver
+    
     func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
-        // handle receiving application context
         DispatchQueue.main.async() {
-            // make sure to put on the main queue to update UI!
             self.delegate?.phoneManager(self, didReceived: applicationContext)
         }
     }
-
-}
-
-// MARK: Interactive Messaging
-extension PhoneSessionManager {
     
-    // Live messaging! App has to be reachable
-    private var validReachableSession: WCSession? {
-        if session.isReachable {
-            return session
-        }
-        return nil
-    }
     
-    // Sender
+    // MARK: Interactive Messaging Sender
     
     func sendMessage(message: [String : Any], replyHandler: (([String : Any]) -> Void)? = nil, errorHandler: ((Error) -> Void)? = nil) {
         validReachableSession?.sendMessage(message, replyHandler: replyHandler, errorHandler: errorHandler)
     }
 }
+

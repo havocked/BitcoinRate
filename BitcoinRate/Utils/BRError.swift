@@ -11,7 +11,7 @@ import UIKit
 
 
 /// Custom Error enum for the project
-enum BRError {
+enum BRError : Error {
     
     case error(Error)
     case message(title:String, message: String)

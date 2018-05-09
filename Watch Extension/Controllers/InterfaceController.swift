@@ -12,7 +12,9 @@ import WatchConnectivity
 
 final class InterfaceController: WKInterfaceController {
 
-    @IBOutlet var topLabel: WKInterfaceLabel!
+    @IBOutlet var currentRateLabel: WKInterfaceLabel!
+    @IBOutlet var currentSubtitleLabel: WKInterfaceLabel!
+    @IBOutlet var historyLabel: WKInterfaceLabel!
     @IBOutlet var historyTable: WKInterfaceTable!
     
     private var viewModel = InterfaceViewModel()
@@ -20,7 +22,7 @@ final class InterfaceController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         viewModel.delegate = self
-        // Configure interface objects here.
+        self.currentRateLabel.setText(viewModel.currentRateTitle())
     }
     
     override func willActivate() {
@@ -36,6 +38,13 @@ extension InterfaceController : InterfaceViewModelDelegate {
     }
     
     func interfaceViewModelDidUpdateData(viewModel: InterfaceViewModel) {
+        
+        // Update Current rate label
+        
+        self.currentRateLabel.setText(viewModel.currentRateTitle())
+        
+        // Update tableView
+        
         historyTable.setNumberOfRows(viewModel.totalFetchedRates, withRowType: "rateTableRowController")
         
         for index in 0 ..< viewModel.totalFetchedRates {

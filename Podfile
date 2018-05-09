@@ -4,6 +4,7 @@ use_frameworks!
 
 def shared_pods
   	pod 'StringExtensionHTML', '~> 1.0'
+  	pod 'PromiseKit/CorePromise', '~> 6.0'
 end
 
 target 'BitcoinRate' do

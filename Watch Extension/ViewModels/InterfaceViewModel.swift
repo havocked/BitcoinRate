@@ -14,13 +14,14 @@ protocol InterfaceViewModelDelegate: class {
 }
 
 enum InterfaceError: Error {
-    case wrongData
+    case wrongData // The payload received from iOS app has not the correct key
 }
 
 final class InterfaceViewModel: NSObject {
     
     private var sessionManager = PhoneSessionManager()
     private var fetchedHistoryRates = [HistoryRate]()
+    private var fetchedCurrentRate : Currency?
     
     weak var delegate: InterfaceViewModelDelegate?
     
@@ -34,6 +35,7 @@ final class InterfaceViewModel: NSObject {
         sessionManager.startSession()
     }
     
+    /// Launch message to iOS app to retreive new data
     func retreiveHistoryRate() {
         if sessionManager.lastFechtedData.count > 0 {
             processDataAndNotify(data: sessionManager.lastFechtedData)
@@ -43,30 +45,41 @@ final class InterfaceViewModel: NSObject {
         }
     }
     
-    func processDataAndNotify(data: [String:Any]) {
-        do {
-            self.fetchedHistoryRates = try processHistoryRate(with: data)
-            self.delegate?.interfaceViewModelDidUpdateData(viewModel: self)
-        } catch let err {
-            self.delegate?.interfaceViewModel(model: self, didFailWith: err)
-        }
-    }
-    
+    /// Create the appropriate model for the specific table row
     func rateTableRowModel(for row: Int) -> RateTableRowModel {
         let rate = self.fetchedHistoryRates[row]
         let model = RateTableRowModel(historyRate: rate)
         return model
     }
     
-    private func processHistoryRate(with data: [String : Any]) throws -> [HistoryRate] {
-        if let result = data["result"] as? Data {
-            let rates = try JSONDecoder().decode([HistoryRate].self, from: result)
-            return rates
-        } else {
-            throw InterfaceError.wrongData
+    func currentRateTitle() -> String {
+        if let currency = fetchedCurrentRate {
+            return currency.rate
+        }
+        return "-"
+    }
+    
+    /// Convert dictionnary to [HistoryRate] and notify with delegate
+    private func processDataAndNotify(data: [String:Any]) {
+        do {
+            
+            if let historyResult = data["history"] as? Data,
+                let currentRateResult = data["currentRate"] as? Data {
+                let decoder = JSONDecoder()
+                fetchedHistoryRates = try decoder.decode([HistoryRate].self, from: historyResult)
+                fetchedCurrentRate = try decoder.decode(Currency.self, from: currentRateResult)
+            } else {
+                throw InterfaceError.wrongData
+            }
+            
+            self.delegate?.interfaceViewModelDidUpdateData(viewModel: self)
+        } catch let err {
+            self.delegate?.interfaceViewModel(model: self, didFailWith: err)
         }
     }
 }
+
+// MARK: PhoneSession Delegates
 
 extension InterfaceViewModel : PhoneSessionDelegate {
     func phoneManagerIsReady(_ manager: PhoneSessionManager) {

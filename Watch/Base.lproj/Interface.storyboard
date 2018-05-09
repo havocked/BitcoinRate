@@ -19,11 +19,11 @@
                                 <imageView width="0.29999999999999999" height="1" alignment="left" image="btc-symbole" contentMode="scaleAspectFit" id="ZEo-h5-IaB"/>
                                 <group width="1" alignment="left" layout="vertical" spacing="0.0" id="E76-Yb-b13">
                                     <items>
-                                        <label width="1" alignment="left" verticalAlignment="bottom" text="Current Rate" textAlignment="left" id="SFS-sg-MTd">
-                                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
-                                        </label>
                                         <label width="1" alignment="left" text="7340.4333" minimumScaleFactor="0.29999999999999999" id="6hC-WU-cg3">
                                             <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                        </label>
+                                        <label width="1" alignment="left" verticalAlignment="bottom" text="Current Rate" textAlignment="left" id="SFS-sg-MTd">
+                                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                                         </label>
                                     </items>
                                 </group>
@@ -57,8 +57,10 @@
                         </table>
                     </items>
                     <connections>
+                        <outlet property="currentRateLabel" destination="6hC-WU-cg3" id="ZzW-hg-g2F"/>
+                        <outlet property="currentSubtitleLabel" destination="SFS-sg-MTd" id="1kd-8G-asd"/>
+                        <outlet property="historyLabel" destination="av2-6s-isi" id="QiA-v8-gDR"/>
                         <outlet property="historyTable" destination="vsT-Tk-bIe" id="gM3-DB-kTy"/>
-                        <outlet property="topLabel" destination="av2-6s-isi" id="49c-8E-TWe"/>
                     </connections>
                 </controller>
             </objects>

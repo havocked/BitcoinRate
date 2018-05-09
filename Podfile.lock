@@ -1,16 +1,20 @@
 PODS:
+  - PromiseKit/CorePromise (6.2.5)
   - StringExtensionHTML (1.0.2)
 
 DEPENDENCIES:
+  - PromiseKit/CorePromise (~> 6.0)
   - StringExtensionHTML (~> 1.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - PromiseKit
     - StringExtensionHTML
 
 SPEC CHECKSUMS:
+  PromiseKit: a26828b0a8d5874960dfdb575b57a70790ec36f1
   StringExtensionHTML: 856dcc0c705012ae2f9c29c7413b015b82133e52
 
-PODFILE CHECKSUM: efb74d76d97f58ba6acf1caf1954be478adea6a9
+PODFILE CHECKSUM: e7d8c089326fe39a0a180c33b15f94c8ce014651
 
 COCOAPODS: 1.5.0
