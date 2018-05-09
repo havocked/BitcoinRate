@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        WatchSessionManager.sharedManager.startSession()
+        WatchSessionManager.default.startSession()
         
         return true
     }

@@ -10,7 +10,7 @@ import Foundation
 
 
 fileprivate struct FileStorage {
-    private let baseURL: URL = try! FileManager.default.url(for: .cachesDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+    private let baseURL: URL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
     
     subscript(key: String) -> Data? {
         get { return try? Data(contentsOf: baseURL.appendingPathComponent(key)) }
@@ -72,7 +72,7 @@ struct CachedWebservice : NetworkRessource {
     }
     
     func fetchCurrentRate(completionHandler: @escaping (CurrentRateResponse) -> (), failureHandler: @escaping FailureHandler) {
-        
+        clearCache()
         // Current rate always needs be fetched, but also cached. So if there is a cache, the completionHandler will be called 2 times.
         
         let router = Router.currentRate
@@ -88,7 +88,7 @@ struct CachedWebservice : NetworkRessource {
     }
     
     func fetchHistoryRate(from fromDate: Date, to toDate: Date, currency: String, completionHandler: @escaping (HistoryRateResponse) -> (), failureHandler: @escaping FailureHandler) {
-        
+        clearCache()
         // If there is a cache, then no need to do a network call.
         
         let router = Router.historyRate(start: fromDate, end: toDate, currency: currency)
@@ -96,6 +96,7 @@ struct CachedWebservice : NetworkRessource {
             print("cache hit")
             completionHandler(result)
         } else {
+            print("Launch Network request")
             networkManager.callRequest(request: router.asURLRequest(), withSuccess: { (response: HistoryRateResponse) ->() in
                 self.cache.save(response, for: router)
                 completionHandler(response)

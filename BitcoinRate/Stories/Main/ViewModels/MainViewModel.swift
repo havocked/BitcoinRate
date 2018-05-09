@@ -57,7 +57,8 @@ final class MainViewModel {
         
         let currency = "EUR"
         networkManager.fetchHistoryRate(from: fromDate!, to: endDate, currency: currency, completionHandler: { [unowned self] response in
-            self.process(response, currency: currency)
+            self.fetchedRates = MainViewModel.process(response, currency: currency)
+            self.delegate?.mainViewModelDidUpdateHistory(model: self)
         }) { [unowned self] error in
             self.delegate?.mainViewModel(model: self, showError: error)
         }
@@ -72,15 +73,14 @@ final class MainViewModel {
     // MARK: Private methods
     
     /// Process HistoryRateResponse to retreive and sort fetched rates by descending date
-    private func process(_ response: HistoryRateResponse, currency: String) {
-        
-        self.fetchedRates = response.bpi.compactMap({ (key, value) -> HistoryRate? in
+    static func process(_ response: HistoryRateResponse, currency: String) -> [HistoryRate] {
+        let result = response.bpi.compactMap({ (key, value) -> HistoryRate? in
             let rate = HistoryRate(dateString: key, rate: value, currency: currency)
             return rate
         }).sorted(by: { (first, second) -> Bool in
             return first.date.compare(second.date) == .orderedDescending
         })
-        self.delegate?.mainViewModelDidUpdateHistory(model: self)
+        return result
     }
     
 }

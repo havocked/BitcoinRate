@@ -26,24 +26,22 @@ final class InterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
-        viewModel.retreiveData()
-    }
-    
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
+        viewModel.retreiveHistoryRate()
     }
 }
 
 extension InterfaceController : InterfaceViewModelDelegate {
-    func interfaceViewModel(model: InterfaceViewModel, didUpdate data: [ProcessedData]) {
-        
-        historyTable.setNumberOfRows(data.count, withRowType: "rateTableRowController")
+    func interfaceViewModel(model: InterfaceViewModel, didFailWith error: Error) {
+        print("[InterfaceViewModel] An error occured")
+    }
     
-        for (index, data) in data.enumerated() {
+    func interfaceViewModelDidUpdateData(viewModel: InterfaceViewModel) {
+        historyTable.setNumberOfRows(viewModel.totalFetchedRates, withRowType: "rateTableRowController")
+        
+        for index in 0 ..< viewModel.totalFetchedRates {
             let row = historyTable.rowController(at: index) as! RateTableRowController
-            row.configure(with: data)
-            
+            let model = viewModel.rateTableRowModel(for: index)
+            row.configure(with: model)
         }
     }
 }

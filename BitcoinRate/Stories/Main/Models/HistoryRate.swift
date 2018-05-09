@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct HistoryRate {
+struct HistoryRate : Codable {
     var date: Date
     var rate: Float
     var currency: String

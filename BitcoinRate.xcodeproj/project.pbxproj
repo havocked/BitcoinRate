@@ -58,7 +58,9 @@
 		8399293F20A1FAFA00208440 /* CacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8399293E20A1FAFA00208440 /* CacheTests.swift */; };
 		83AF630120A23AFC00E1E754 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF630020A23AFC00E1E754 /* WatchSessionManager.swift */; };
 		83AF630720A2482F00E1E754 /* InterfaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF630620A2482F00E1E754 /* InterfaceViewModel.swift */; };
-		83AF630820A2D88500E1E754 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF630020A23AFC00E1E754 /* WatchSessionManager.swift */; };
+		83AF630A20A2EB3F00E1E754 /* PhoneSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF630920A2EB3F00E1E754 /* PhoneSessionManager.swift */; };
+		83AF630E20A3196D00E1E754 /* HistoryRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839928F420A1AA3700208440 /* HistoryRate.swift */; };
+		83AF631020A320A400E1E754 /* RateTableRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF630F20A320A400E1E754 /* RateTableRowModel.swift */; };
 		86ABD7CA66038EA1BB44DCFB /* Pods_Watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD2CC2EE9F34E5CE984A298 /* Pods_Watch.framework */; };
 /* End PBXBuildFile section */
 
@@ -179,6 +181,8 @@
 		8399293E20A1FAFA00208440 /* CacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheTests.swift; sourceTree = "<group>"; };
 		83AF630020A23AFC00E1E754 /* WatchSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
 		83AF630620A2482F00E1E754 /* InterfaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceViewModel.swift; sourceTree = "<group>"; };
+		83AF630920A2EB3F00E1E754 /* PhoneSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneSessionManager.swift; sourceTree = "<group>"; };
+		83AF630F20A320A400E1E754 /* RateTableRowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateTableRowModel.swift; sourceTree = "<group>"; };
 		864E2EDF4037C6224D0897DC /* Pods-Watch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Watch/Pods-Watch.release.xcconfig"; sourceTree = "<group>"; };
 		8CB023936371999AF9308E2D /* Pods-Watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Watch/Pods-Watch.debug.xcconfig"; sourceTree = "<group>"; };
 		923A4381AA02F8211DA908C4 /* Pods_Watch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -462,12 +466,12 @@
 		8399291920A1DD6D00208440 /* Watch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				83AF631320A325D000E1E754 /* Controllers */,
 				83AF630520A2481D00E1E754 /* ViewModels */,
+				83AF630B20A3165500E1E754 /* Models */,
+				83AF631220A325C000E1E754 /* Managers */,
+				83AF631120A325B900E1E754 /* Utils */,
 				83AF630420A247B600E1E754 /* Supporting Files */,
-				8399293120A1E41C00208440 /* RateTableRowController.swift */,
-				8399291A20A1DD6D00208440 /* InterfaceController.swift */,
-				8399291C20A1DD6D00208440 /* ExtensionDelegate.swift */,
-				8399291E20A1DD6D00208440 /* NotificationController.swift */,
 			);
 			path = "Watch Extension";
 			sourceTree = "<group>";
@@ -487,6 +491,7 @@
 				8399292020A1DD6E00208440 /* Assets.xcassets */,
 				8399292220A1DD6E00208440 /* Info.plist */,
 				8399292320A1DD6E00208440 /* PushNotificationPayload.apns */,
+				8399291C20A1DD6D00208440 /* ExtensionDelegate.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -497,6 +502,39 @@
 				83AF630620A2482F00E1E754 /* InterfaceViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		83AF630B20A3165500E1E754 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				83AF630F20A320A400E1E754 /* RateTableRowModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		83AF631120A325B900E1E754 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		83AF631220A325C000E1E754 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				83AF630920A2EB3F00E1E754 /* PhoneSessionManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		83AF631320A325D000E1E754 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8399291E20A1DD6D00208440 /* NotificationController.swift */,
+				8399293120A1E41C00208440 /* RateTableRowController.swift */,
+				8399291A20A1DD6D00208440 /* InterfaceController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		9864A5B650C8E080B0B058B4 /* Frameworks */ = {
@@ -914,12 +952,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83AF630A20A2EB3F00E1E754 /* PhoneSessionManager.swift in Sources */,
 				83AF630720A2482F00E1E754 /* InterfaceViewModel.swift in Sources */,
+				83AF630E20A3196D00E1E754 /* HistoryRate.swift in Sources */,
 				8399291F20A1DD6D00208440 /* NotificationController.swift in Sources */,
 				8399291D20A1DD6D00208440 /* ExtensionDelegate.swift in Sources */,
 				8399291B20A1DD6D00208440 /* InterfaceController.swift in Sources */,
 				8399293220A1E41C00208440 /* RateTableRowController.swift in Sources */,
-				83AF630820A2D88500E1E754 /* WatchSessionManager.swift in Sources */,
+				83AF631020A320A400E1E754 /* RateTableRowModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

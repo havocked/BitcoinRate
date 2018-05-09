@@ -12,8 +12,8 @@ final class RateTableRowController: NSObject {
     @IBOutlet var topLabel: WKInterfaceLabel!
     @IBOutlet var bottomLabel: WKInterfaceLabel!
     
-    func configure(with data: ProcessedData) {
-        topLabel.setText(data.title)
-        bottomLabel.setText(data.date)
+    func configure(with model: RateTableRowModel) {
+        topLabel.setText(model.title)
+        bottomLabel.setText(model.subtitle)
     }
 }
