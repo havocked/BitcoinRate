@@ -42,9 +42,11 @@ Note:
 
 We could also have used *URLSession* within the watch app. But, in order to not over complicate the project, we will stick with this process for now. 
 
+```
 Watch ->         sendMessage          -> iOS
                                           | Fetch new data
       <-   updateApplicationContext   <-
+```
 
 ## Known issues
 
