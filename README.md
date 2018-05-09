@@ -56,7 +56,7 @@ Watch ->         sendMessage          -> iOS
 
 Two framework are used with Cocoapods:
 
-#### StringExtensionHTML
+#### [StringExtensionHTML](https://github.com/mxcl/PromiseKit)
 
 Small helper to nicely convert html code to formatted string. (Coindesk api returns symbols' codes)
 
