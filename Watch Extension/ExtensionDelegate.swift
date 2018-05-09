@@ -12,6 +12,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
     override init() {
         super.init()
+        WatchSessionManager.sharedManager.startSession()
     }
     
     func applicationDidFinishLaunching() {

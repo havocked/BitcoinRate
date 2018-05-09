@@ -11,4 +11,9 @@ import WatchKit
 final class RateTableRowController: NSObject {
     @IBOutlet var topLabel: WKInterfaceLabel!
     @IBOutlet var bottomLabel: WKInterfaceLabel!
+    
+    func configure(with data: ProcessedData) {
+        topLabel.setText(data.title)
+        bottomLabel.setText(data.date)
+    }
 }

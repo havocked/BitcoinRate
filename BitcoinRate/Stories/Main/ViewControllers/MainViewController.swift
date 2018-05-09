@@ -73,7 +73,11 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        WatchSessionManager.default.updateApplicationContext()
+        do {
+            try WatchSessionManager.sharedManager.updateApplicationContext(applicationContext: ["Test": NSNumber(value: arc4random())])
+        } catch {
+            
+        }
     }
 }
 

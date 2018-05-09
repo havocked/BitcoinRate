@@ -33,30 +33,17 @@ final class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
-
-//    private func loadTableData() {
-//
-//        topLabel.setText("Current Rate\n17000.34 €")
-//
-//        historyTable.setNumberOfRows(result.count, withRowType: "rateTableRowController")
-//
-//        for (index, data) in result.enumerated() {
-//            let row = historyTable.rowController(at: index) as! RateTableRowController
-//            row.topLabel.setText("\(data) €")
-//            row.bottomLabel.setText("07-11-1989")
-//        }
-    //    }
-    
 }
 
 extension InterfaceController : InterfaceViewModelDelegate {
     func interfaceViewModel(model: InterfaceViewModel, didUpdate data: [ProcessedData]) {
-        historyTable.setNumberOfRows(data.count, withRowType: "rateTableRowController")
         
+        historyTable.setNumberOfRows(data.count, withRowType: "rateTableRowController")
+    
         for (index, data) in data.enumerated() {
             let row = historyTable.rowController(at: index) as! RateTableRowController
-            row.topLabel.setText(data.title)
-            row.bottomLabel.setText(data.date)
+            row.configure(with: data)
+            
         }
     }
 }
