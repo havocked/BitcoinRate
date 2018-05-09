@@ -14,7 +14,23 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch" customModuleProvider="target">
                     <items>
-                        <label width="1" alignment="left" text="Label" textAlignment="center" numberOfLines="0" id="av2-6s-isi">
+                        <group width="1" alignment="left" id="gbC-jJ-Y1Q">
+                            <items>
+                                <imageView width="0.29999999999999999" height="1" alignment="left" image="btc-symbole" contentMode="scaleAspectFit" id="ZEo-h5-IaB"/>
+                                <group width="1" alignment="left" layout="vertical" spacing="0.0" id="E76-Yb-b13">
+                                    <items>
+                                        <label width="1" alignment="left" verticalAlignment="bottom" text="Current Rate" textAlignment="left" id="SFS-sg-MTd">
+                                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                        </label>
+                                        <label width="1" alignment="left" text="7340.4333" minimumScaleFactor="0.29999999999999999" id="6hC-WU-cg3">
+                                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="ylJ-Dh-i2c"/>
+                        <label width="1" alignment="left" text="History" textAlignment="left" numberOfLines="0" id="av2-6s-isi">
                             <color key="textColor" red="1" green="0.61779690477327021" blue="0.57878817077090794" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                         </label>
