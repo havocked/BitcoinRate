@@ -9,19 +9,30 @@
 import Foundation
 
 fileprivate struct FileStorage {
-    private let baseURL: URL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+    private let baseURL: URL? = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
     
     subscript(key: String) -> Data? {
-        get { return try? Data(contentsOf: baseURL.appendingPathComponent(key)) }
+        get {
+            guard let baseURL = baseURL else {
+                return nil
+            }
+            return try? Data(contentsOf: baseURL.appendingPathComponent(key))
+        }
         set {
-            let url = baseURL.appendingPathComponent(key)
-            try? newValue?.write(to: url)
+            if let url = baseURL?.appendingPathComponent(key) {
+                try? newValue?.write(to: url)
+            }
         }
     }
     
     func clearDiskCache() {
+        guard let baseURL = baseURL else {
+            return
+        }
         let fileManager = FileManager.default
-        guard let filePaths = try? fileManager.contentsOfDirectory(at: baseURL, includingPropertiesForKeys: nil, options: []) else { return }
+        guard let filePaths = try? fileManager.contentsOfDirectory(at: baseURL, includingPropertiesForKeys: nil, options: []) else {
+            return
+        }
         for filePath in filePaths {
             try? fileManager.removeItem(at: filePath)
         }
@@ -49,10 +60,16 @@ final class Cache {
     }
     
     func save<A: Codable>(_ data: A, for resource: Router) {
-        guard case .get = resource.method else { return }
+        guard case .get = resource.method else {
+            return
+        }
+        
         let encoder = JSONEncoder()
-        let encodedResult = try! encoder.encode(data)
-        storage[resource.cacheKey] = encodedResult
+        if let encodedResult = try? encoder.encode(data) {
+            storage[resource.cacheKey] = encodedResult
+        } else {
+            print("Failed to save data for \(resource.cacheKey) - Encoding error")
+        }
     }
     
     /// Delete all data stored in cache

@@ -13,7 +13,7 @@ final class HeaderView: NibSettable {
     @IBOutlet weak var centeredLabel: UILabel!
     
     override func setupUI() {
-        centeredLabel.text = "Today's Rate:\n-"
+        centeredLabel.text = "\("HEADER_CURRENT_RATE_TITLE".localized):\n-"
         self.centeredLabel.font = UIFont.boldSystemFont(ofSize: 20)
         self.contentView.backgroundColor = UIColor.groupTableViewBackground
     }

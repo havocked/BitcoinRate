@@ -14,7 +14,7 @@ struct Keys {
     static let WatchAskUpdate = "WatchAskUpdate"
 }
 
-class WatchSessionManager: NSObject, WCSessionDelegate {
+final class WatchSessionManager: NSObject, WCSessionDelegate {
     
     static let `default` = WatchSessionManager()
     
@@ -32,16 +32,19 @@ class WatchSessionManager: NSObject, WCSessionDelegate {
         return nil
     }
     
+    // Private init so that we use only the singleton
     private override init() {
         super.init()
     }
     
+    /// Initialize the WCSession object
     func startSession() {
         session?.delegate = self
         session?.activate()
     }
     
-    fileprivate func retreiveHistoryRates() {
+    /// Retreive data from network/cache and share it to Watch with WCSession *updateApplicationContext* method
+    private func retreiveHistoryRates() {
         let endDate = Date()
         
         // Get the date 2 weeks before the current date
@@ -59,7 +62,7 @@ class WatchSessionManager: NSObject, WCSessionDelegate {
             let historyResult = MainViewModel.process(historyResponse, currency: currency)
             let encoder = JSONEncoder()
             let encodedHistoryResult = try encoder.encode(historyResult)
-            let currentRate = currentRateResponse.bpi[currency]!
+            let currentRate = currentRateResponse.bpi[currency]
             let encodedCurrentRateResult = try encoder.encode(currentRate)
             
             try self.updateApplicationContext(applicationContext: ["history": encodedHistoryResult,
@@ -99,13 +102,6 @@ class WatchSessionManager: NSObject, WCSessionDelegate {
     }
 }
 
-extension Dictionary {
-    
-    static func += (lhs: inout Dictionary, rhs: Dictionary) {
-        lhs.merge(rhs) { (_, new) in new }
-    }
-}
-
 // MARK: Application Context
 // use when your app needs only the latest information
 // if the data was not sent, it will be replaced
@@ -141,7 +137,7 @@ extension WatchSessionManager {
 
 // MARK: Extension for NetworkRessource in order to use PromiseKit Framework
 
-extension NetworkRessource {
+fileprivate extension NetworkRessource {
     func fetchCurrentRate() -> Promise<CurrentRateResponse> {
         return Promise { seal in
             fetchCurrentRate(completionHandler: { response in

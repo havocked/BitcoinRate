@@ -41,14 +41,20 @@ struct NetworkManager {
                 if let data = data, let httpResponse = response as? HTTPURLResponse {
                     if httpResponse.isStatusOK {
                         let decoder = JSONDecoder()
-                        let decodedResult = try! decoder.decode(T.self, from: data)
-                        DispatchQueue.main.async {
-                            success(decodedResult)
+                        do {
+                            let decodedResult = try decoder.decode(T.self, from: data)
+                            DispatchQueue.main.async {
+                                success(decodedResult)
+                            }
+                        } catch let err {
+                            DispatchQueue.main.async {
+                                let error = BRError.error(err)
+                                failure(error)
+                            }
                         }
                     } else {
-                        
                         DispatchQueue.main.async {
-                            let error = BRError.message(title: "Error API", message: "\(httpResponse)")
+                            let error = BRError.message(title: "ERROR_ALERT_TITLE".localized, message: "\(httpResponse)")
                             failure(error)
                         }
                     }

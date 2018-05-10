@@ -80,7 +80,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "History rate"
+        return "HISTORY_SECTION_HEADER_TITLE".localized
     }
 }
 

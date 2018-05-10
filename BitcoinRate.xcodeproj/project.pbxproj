@@ -62,6 +62,11 @@
 		83AF630E20A3196D00E1E754 /* HistoryRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839928F420A1AA3700208440 /* HistoryRate.swift */; };
 		83AF631020A320A400E1E754 /* RateTableRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF630F20A320A400E1E754 /* RateTableRowModel.swift */; };
 		83FA1FA620A337670086A89F /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839928E820A18F0D00208440 /* Currency.swift */; };
+		83FA1FAD20A432880086A89F /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83FA1FAC20A432880086A89F /* NotificationCenter.framework */; };
+		83FA1FB020A432880086A89F /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA1FAF20A432880086A89F /* TodayViewController.swift */; };
+		83FA1FB320A432880086A89F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FA1FB120A432880086A89F /* MainInterface.storyboard */; };
+		83FA1FB720A432880086A89F /* Today Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 83FA1FAB20A432880086A89F /* Today Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		83FA1FBF20A446180086A89F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83FA1FC120A446180086A89F /* Localizable.strings */; };
 		86ABD7CA66038EA1BB44DCFB /* Pods_Watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD2CC2EE9F34E5CE984A298 /* Pods_Watch.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +99,13 @@
 			remoteGlobalIDString = 8399290820A1DD6C00208440;
 			remoteInfo = Watch;
 		};
+		83FA1FB520A432880086A89F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8399288120A1849400208440 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83FA1FAA20A432880086A89F;
+			remoteInfo = "Today Extension";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -117,6 +129,17 @@
 				8399292620A1DD6E00208440 /* Watch.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83FA1FBC20A432880086A89F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				83FA1FB720A432880086A89F /* Today Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -184,6 +207,14 @@
 		83AF630620A2482F00E1E754 /* InterfaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceViewModel.swift; sourceTree = "<group>"; };
 		83AF630920A2EB3F00E1E754 /* PhoneSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneSessionManager.swift; sourceTree = "<group>"; };
 		83AF630F20A320A400E1E754 /* RateTableRowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateTableRowModel.swift; sourceTree = "<group>"; };
+		83FA1FAB20A432880086A89F /* Today Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Today Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83FA1FAC20A432880086A89F /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		83FA1FAF20A432880086A89F /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		83FA1FB220A432880086A89F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		83FA1FB420A432880086A89F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83FA1FC020A446180086A89F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		83FA1FC220A467CA0086A89F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		83FA1FC320A467D20086A89F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		864E2EDF4037C6224D0897DC /* Pods-Watch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Watch/Pods-Watch.release.xcconfig"; sourceTree = "<group>"; };
 		8CB023936371999AF9308E2D /* Pods-Watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Watch/Pods-Watch.debug.xcconfig"; sourceTree = "<group>"; };
 		923A4381AA02F8211DA908C4 /* Pods_Watch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -225,6 +256,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83FA1FA820A432880086A89F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83FA1FAD20A432880086A89F /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BE368BC39EA06F49591B76AF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -257,6 +296,7 @@
 				839928AD20A1849500208440 /* BitcoinRateUITests */,
 				8399290A20A1DD6C00208440 /* Watch */,
 				8399291920A1DD6D00208440 /* Watch Extension */,
+				83FA1FAE20A432880086A89F /* Today Extension */,
 				8399288A20A1849400208440 /* Products */,
 				3DD7BF7F76F686216F552A5C /* Pods */,
 				9864A5B650C8E080B0B058B4 /* Frameworks */,
@@ -271,6 +311,7 @@
 				839928AA20A1849500208440 /* BitcoinRateUITests.xctest */,
 				8399290920A1DD6C00208440 /* Watch.app */,
 				8399291520A1DD6D00208440 /* Watch Extension.appex */,
+				83FA1FAB20A432880086A89F /* Today Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -323,6 +364,7 @@
 				8399289520A1849500208440 /* Assets.xcassets */,
 				8399289720A1849500208440 /* LaunchScreen.storyboard */,
 				8399289A20A1849500208440 /* Info.plist */,
+				83FA1FC120A446180086A89F /* Localizable.strings */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -538,6 +580,16 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		83FA1FAE20A432880086A89F /* Today Extension */ = {
+			isa = PBXGroup;
+			children = (
+				83FA1FAF20A432880086A89F /* TodayViewController.swift */,
+				83FA1FB120A432880086A89F /* MainInterface.storyboard */,
+				83FA1FB420A432880086A89F /* Info.plist */,
+			);
+			path = "Today Extension";
+			sourceTree = "<group>";
+		};
 		9864A5B650C8E080B0B058B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -546,6 +598,7 @@
 				CDD30EB0510E61D425D9A66A /* Pods_BitcoinRateUITests.framework */,
 				2AD2CC2EE9F34E5CE984A298 /* Pods_Watch.framework */,
 				923A4381AA02F8211DA908C4 /* Pods_Watch_Extension.framework */,
+				83FA1FAC20A432880086A89F /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -563,11 +616,13 @@
 				8399288720A1849400208440 /* Resources */,
 				8399293020A1DD6E00208440 /* Embed Watch Content */,
 				D0D79A13581CD07BF09F3D01 /* [CP] Embed Pods Frameworks */,
+				83FA1FBC20A432880086A89F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				8399292520A1DD6E00208440 /* PBXTargetDependency */,
+				83FA1FB620A432880086A89F /* PBXTargetDependency */,
 			);
 			name = BitcoinRate;
 			productName = BitcoinRate;
@@ -651,6 +706,23 @@
 			productReference = 8399291520A1DD6D00208440 /* Watch Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
+		83FA1FAA20A432880086A89F /* Today Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83FA1FBB20A432880086A89F /* Build configuration list for PBXNativeTarget "Today Extension" */;
+			buildPhases = (
+				83FA1FA720A432880086A89F /* Sources */,
+				83FA1FA820A432880086A89F /* Frameworks */,
+				83FA1FA920A432880086A89F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Today Extension";
+			productName = "Today Extension";
+			productReference = 83FA1FAB20A432880086A89F /* Today Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -678,6 +750,9 @@
 					8399291420A1DD6D00208440 = {
 						CreatedOnToolsVersion = 9.3;
 					};
+					83FA1FAA20A432880086A89F = {
+						CreatedOnToolsVersion = 9.3;
+					};
 				};
 			};
 			buildConfigurationList = 8399288420A1849400208440 /* Build configuration list for PBXProject "BitcoinRate" */;
@@ -687,6 +762,8 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
+				de,
 			);
 			mainGroup = 8399288020A1849400208440;
 			productRefGroup = 8399288A20A1849400208440 /* Products */;
@@ -698,6 +775,7 @@
 				839928A920A1849500208440 /* BitcoinRateUITests */,
 				8399290820A1DD6C00208440 /* Watch */,
 				8399291420A1DD6D00208440 /* Watch Extension */,
+				83FA1FAA20A432880086A89F /* Today Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -712,6 +790,7 @@
 				8399293D20A1F5EF00208440 /* current.json in Resources */,
 				839928F920A1AD1D00208440 /* HistoryRateCell.xib in Resources */,
 				8399293A20A1F53200208440 /* history.json in Resources */,
+				83FA1FBF20A446180086A89F /* Localizable.strings in Resources */,
 				8399289420A1849400208440 /* Main.storyboard in Resources */,
 				839928BD20A1856D00208440 /* HeaderView.xib in Resources */,
 			);
@@ -747,6 +826,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8399292120A1DD6E00208440 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83FA1FA920A432880086A89F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83FA1FB320A432880086A89F /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -971,6 +1058,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83FA1FA720A432880086A89F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83FA1FB020A432880086A89F /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -993,6 +1088,11 @@
 			isa = PBXTargetDependency;
 			target = 8399290820A1DD6C00208440 /* Watch */;
 			targetProxy = 8399292420A1DD6E00208440 /* PBXContainerItemProxy */;
+		};
+		83FA1FB620A432880086A89F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83FA1FAA20A432880086A89F /* Today Extension */;
+			targetProxy = 83FA1FB520A432880086A89F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1021,6 +1121,24 @@
 			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
+		83FA1FB120A432880086A89F /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83FA1FB220A432880086A89F /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		83FA1FC120A446180086A89F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83FA1FC020A446180086A89F /* en */,
+				83FA1FC220A467CA0086A89F /* fr */,
+				83FA1FC320A467D20086A89F /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -1029,6 +1147,7 @@
 			baseConfigurationReference = 839928DA20A18B8000208440 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1090,6 +1209,7 @@
 			baseConfigurationReference = 839928DB20A18B8000208440 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1144,7 +1264,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 839928DA20A18B8000208440 /* Debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "${inherited}";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K7WV5867K9;
@@ -1164,7 +1284,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 839928DB20A18B8000208440 /* Release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "${inherited}";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K7WV5867K9;
@@ -1271,6 +1391,7 @@
 			baseConfigurationReference = 839928D920A18B8000208440 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1331,7 +1452,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 839928D920A18B8000208440 /* Development.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "${inherited}";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K7WV5867K9;
@@ -1537,6 +1658,72 @@
 			};
 			name = Release;
 		};
+		83FA1FB820A432880086A89F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K7WV5867K9;
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Today Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "test.bit.BitcoinRate.Today-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83FA1FB920A432880086A89F /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K7WV5867K9;
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Today Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "test.bit.BitcoinRate.Today-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Development;
+		};
+		83FA1FBA20A432880086A89F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K7WV5867K9;
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Today Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "test.bit.BitcoinRate.Today-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1596,6 +1783,16 @@
 				8399292D20A1DD6E00208440 /* Debug */,
 				8399292E20A1DD6E00208440 /* Development */,
 				8399292F20A1DD6E00208440 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83FA1FBB20A432880086A89F /* Build configuration list for PBXNativeTarget "Today Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83FA1FB820A432880086A89F /* Debug */,
+				83FA1FB920A432880086A89F /* Development */,
+				83FA1FBA20A432880086A89F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

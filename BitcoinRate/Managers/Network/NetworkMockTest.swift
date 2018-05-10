@@ -9,7 +9,10 @@
 import Foundation
 
 
+/// NetworkMockErrorTest implements NetworkRessource to be injected during Unit test.
+/// Is used when we want to test error case both in UI and Unit test
 struct NetworkMockErrorTest: NetworkRessource {
+    
     func fetchCurrentRate(completionHandler: @escaping (CurrentRateResponse) -> (), failureHandler: @escaping FailureHandler) {
         let error = BRError.message(title: "Error", message: "Error occured")
         failureHandler(error)
@@ -21,7 +24,9 @@ struct NetworkMockErrorTest: NetworkRessource {
     }
 }
 
+/// NetworkMockTest implements NetworkRessource to be injected during Unit test.
 struct NetworkMockTest: NetworkRessource {
+    
     func fetchCurrentRate(completionHandler: @escaping (CurrentRateResponse) -> (), failureHandler: @escaping FailureHandler) {
         
         let bundle = Bundle.main

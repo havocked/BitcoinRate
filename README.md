@@ -56,11 +56,11 @@ Watch ->         sendMessage          -> iOS
 
 Two framework are used with Cocoapods:
 
-#### [StringExtensionHTML](https://github.com/mxcl/PromiseKit)
+#### [StringExtensionHTML](https://github.com/adela-chang/StringExtensionHTML)
 
 Small helper to nicely convert html code to formatted string. (Coindesk api returns symbols' codes)
 
-#### PromiseKit
+#### [PromiseKit](https://github.com/mxcl/PromiseKit)
 
 This pod is used in WatchSessionManager to combine nicely two network calls before returning both results to the Watch
 

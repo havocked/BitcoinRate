@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  BitcoinRate
+
+  Created by Nataniel Martin on 10/05/2018.
+  Copyright © 2018 Nataniel Martin. All rights reserved.
+*/
+
+// Error
+
+"ERROR_ALERT_TITLE" = "Error";
+"ERROR_INTERNET" = "Prüfe deine Internetverbindung";
+"ERROR_UNKNOWN" = "Ein Fehler ist aufgetreten";
+"ALERT_OK_ACTION_TITLE" = "Ok";
+
+// MainViewController
+
+"HISTORY_SECTION_HEADER_TITLE" = "Währung";
+"HEADER_CURRENT_RATE_TITLE" = "Aktuelle Währung";

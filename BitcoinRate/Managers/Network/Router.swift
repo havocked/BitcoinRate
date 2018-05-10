@@ -93,6 +93,8 @@ enum Router {
 }
 
 extension Router {
+    
+    /// Is used as a dictionnary key when we want to save data in cache, gotten from a specific router.
     var cacheKey: String {
         return "cache\(self.asURLRequest().hashValue)"
     }

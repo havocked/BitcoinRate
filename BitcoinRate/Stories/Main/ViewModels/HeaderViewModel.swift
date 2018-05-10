@@ -13,6 +13,6 @@ struct HeaderViewModel {
     var title: String
     
     init(currency: Currency) {
-        title = "Today's Rate:\n\(currency.rate_float) \(currency.symbol)".stringByDecodingHTMLEntities
+        title = "\("HEADER_CURRENT_RATE_TITLE".localized):\n\(currency.rate_float) \(currency.symbol)".stringByDecodingHTMLEntities
     }
 }
