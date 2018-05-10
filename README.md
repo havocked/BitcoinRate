@@ -73,7 +73,7 @@ There's not a lot to test in UI. But you will find one that demonstrate the use 
 
 ## Documentation
 
-The [documentation](./docs/index.html) is generate with [Jazzy](https://github.com/realm/jazzy). We can re-generate an update documentation with the following commandline :
+The [documentation](./docs) is generate with [Jazzy](https://github.com/realm/jazzy). We can re-generate an update documentation with the following commandline :
 
 ```
 jazzy --min-acl internal -x -workspace,BitcoinRate.xcworkspace,-scheme,BitcoinRate
