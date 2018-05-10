@@ -48,9 +48,10 @@ Watch ->         sendMessage          -> iOS
       <-   updateApplicationContext   <-
 ```
 
-## Known issues
+## Notes about the challenge
 
-//TODO
+- The optional Today Extension is not implemented
+- The optional continuous refresh of the current exchange rate BTC/EUR is not implemented
 
 ## Cocoapods
 
@@ -72,7 +73,7 @@ There's not a lot to test in UI. But you will find one that demonstrate the use 
 
 ## Documentation
 
-The documentation is generate with [Jazzy](https://github.com/realm/jazzy). We can re-generate an update documentation with the following commandline :
+The [documentation](./docs/index.html) is generate with [Jazzy](https://github.com/realm/jazzy). We can re-generate an update documentation with the following commandline :
 
 ```
 jazzy --min-acl internal -x -workspace,BitcoinRate.xcworkspace,-scheme,BitcoinRate
