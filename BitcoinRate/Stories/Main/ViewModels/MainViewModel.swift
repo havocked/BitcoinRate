@@ -33,6 +33,8 @@ final class MainViewModel {
         // Use Mock response when UI testing
         if let _ = ProcessInfo.processInfo.environment["-ShouldMockResponse"] {
             networkManager = NetworkMockTest()
+        } else if let _ = ProcessInfo.processInfo.environment["-ShouldMockErrorResponse"] {
+            networkManager = NetworkMockErrorTest()
         } else {
             networkManager = networkRessource
         }

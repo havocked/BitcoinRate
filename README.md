@@ -67,3 +67,5 @@ This pod is used in WatchSessionManager to combine nicely two network calls befo
 ## Testing
 
 To test different parts of the project, I use the Xcode test framework.
+
+There's not a lot to test in UI. But you will find one that demonstrate the use of Mock ressources using *launchEnvironment* a the beginning of the test.

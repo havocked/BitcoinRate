@@ -1,20 +1,20 @@
 //
-//  BitcoinRateUITests.swift
+//  BitcoinRateErrorUITests.swift
 //  BitcoinRateUITests
 //
-//  Created by Nataniel Martin on 08/05/2018.
+//  Created by Nataniel Martin on 10/05/2018.
 //  Copyright © 2018 Nataniel Martin. All rights reserved.
 //
 
 import XCTest
 
-class BitcoinRateUITests: XCTestCase {
-        
+class BitcoinRateErrorUITests: XCTestCase {
+    
     override func setUp() {
         super.setUp()
         
         let app = XCUIApplication()
-        app.launchEnvironment["-ShouldMockResponse"] = "YES"
+        app.launchEnvironment["-ShouldMockErrorResponse"] = "YES"
         
         continueAfterFailure = false
         app.launch()
@@ -26,7 +26,7 @@ class BitcoinRateUITests: XCTestCase {
     
     func testCurrentRateDisplay() {
         let app = XCUIApplication()
-        let text = app.staticTexts["Today's Rate: 7688.89 €"]
-        XCTAssertEqual(text.label, "Today's Rate: 7688.89 €")
+        XCTAssert(app.alerts["Error"].exists)
     }
+    
 }

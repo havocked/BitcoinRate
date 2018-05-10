@@ -67,6 +67,8 @@
 		83FA1FB320A432880086A89F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FA1FB120A432880086A89F /* MainInterface.storyboard */; };
 		83FA1FB720A432880086A89F /* Today Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 83FA1FAB20A432880086A89F /* Today Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		83FA1FBF20A446180086A89F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83FA1FC120A446180086A89F /* Localizable.strings */; };
+		83FA1FC720A46CC90086A89F /* BRErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA1FC620A46CC90086A89F /* BRErrorTests.swift */; };
+		83FA1FC920A470210086A89F /* BitcoinRateErrorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA1FC820A470210086A89F /* BitcoinRateErrorUITests.swift */; };
 		86ABD7CA66038EA1BB44DCFB /* Pods_Watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD2CC2EE9F34E5CE984A298 /* Pods_Watch.framework */; };
 /* End PBXBuildFile section */
 
@@ -215,6 +217,8 @@
 		83FA1FC020A446180086A89F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		83FA1FC220A467CA0086A89F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		83FA1FC320A467D20086A89F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		83FA1FC620A46CC90086A89F /* BRErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRErrorTests.swift; sourceTree = "<group>"; };
+		83FA1FC820A470210086A89F /* BitcoinRateErrorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinRateErrorUITests.swift; sourceTree = "<group>"; };
 		864E2EDF4037C6224D0897DC /* Pods-Watch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Watch/Pods-Watch.release.xcconfig"; sourceTree = "<group>"; };
 		8CB023936371999AF9308E2D /* Pods-Watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Watch/Pods-Watch.debug.xcconfig"; sourceTree = "<group>"; };
 		923A4381AA02F8211DA908C4 /* Pods_Watch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -334,6 +338,7 @@
 				839928A520A1849500208440 /* Info.plist */,
 				8399293320A1F34B00208440 /* MainViewModelTests.swift */,
 				8399293E20A1FAFA00208440 /* CacheTests.swift */,
+				83FA1FC620A46CC90086A89F /* BRErrorTests.swift */,
 			);
 			path = BitcoinRateTests;
 			sourceTree = "<group>";
@@ -342,6 +347,7 @@
 			isa = PBXGroup;
 			children = (
 				839928AE20A1849500208440 /* BitcoinRateUITests.swift */,
+				83FA1FC820A470210086A89F /* BitcoinRateErrorUITests.swift */,
 				839928B020A1849500208440 /* Info.plist */,
 			);
 			path = BitcoinRateUITests;
@@ -1030,6 +1036,7 @@
 				8399293820A1F4D200208440 /* HistoryRateCellModel.swift in Sources */,
 				8399293C20A1F59400208440 /* HistoryRate.swift in Sources */,
 				8399293F20A1FAFA00208440 /* CacheTests.swift in Sources */,
+				83FA1FC720A46CC90086A89F /* BRErrorTests.swift in Sources */,
 				8399293420A1F34B00208440 /* MainViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1039,6 +1046,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				839928AF20A1849500208440 /* BitcoinRateUITests.swift in Sources */,
+				83FA1FC920A470210086A89F /* BitcoinRateErrorUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
