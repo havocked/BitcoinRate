@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WatchSessionManager Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/WatchSessionManager" class="dashAnchor"></a>
+    <a title="WatchSessionManager Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (11% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        WatchSessionManager Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Cache.html">Cache</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HeaderView.html">HeaderView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HistoryRateCell.html">HistoryRateCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MainViewController.html">MainViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MainViewModel.html">MainViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NibSettable.html">NibSettable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WatchSessionManager.html">WatchSessionManager</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BRError.html">BRError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HTTPMethod.html">HTTPMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Router.html">Router</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/HTTPURLResponse.html">HTTPURLResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UITableView.html">UITableView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:11BitcoinRate18EasyRegisteredCellP">EasyRegisteredCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MainViewModelDelegate.html">MainViewModelDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NetworkRessource.html">NetworkRessource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NibLoadableView.html">NibLoadableView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ReusableView.html">ReusableView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/CachedWebservice.html">CachedWebservice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Currency.html">Currency</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CurrentRateResponse.html">CurrentRateResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/HeaderViewModel.html">HeaderViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/HistoryRate.html">HistoryRate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/HistoryRateCellModel.html">HistoryRateCellModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/HistoryRateResponse.html">HistoryRateResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Keys.html">Keys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkManager.html">NetworkManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkMockErrorTest.html">NetworkMockErrorTest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NetworkMockTest.html">NetworkMockTest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ResponseTime.html">ResponseTime</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:11BitcoinRate14FailureHandlera">FailureHandler</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>WatchSessionManager</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">final</span> <span class="kd">class</span> <span class="kt">WatchSessionManager</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">WCSessionDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11BitcoinRate19WatchSessionManagerC7defaultACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/default" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11BitcoinRate19WatchSessionManagerC7defaultACvpZ">default</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">let</span> <span class="err">`</span><span class="k">default</span><span class="err">`</span> <span class="o">=</span> <span class="kt">WatchSessionManager</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11BitcoinRate19WatchSessionManagerC05startD0yyF"></a>
+                    <a name="//apple_ref/swift/Method/startSession()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11BitcoinRate19WatchSessionManagerC05startD0yyF">startSession()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialize the WCSession object</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">startSession</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BitcoinRate@objc(cs)WatchSessionManager(im)session:activationDidCompleteWithState:error:"></a>
+                    <a name="//apple_ref/swift/Method/session(_:activationDidCompleteWith:error:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BitcoinRate@objc(cs)WatchSessionManager(im)session:activationDidCompleteWithState:error:">session(_:activationDidCompleteWith:error:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the session has completed activation.
+If session state is WCSessionActivationStateNotActivated there will be an error with more details.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">session</span><span class="p">(</span><span class="n">_</span> <span class="nv">session</span><span class="p">:</span> <span class="kt">WCSession</span><span class="p">,</span> <span class="n">activationDidCompleteWith</span> <span class="nv">activationState</span><span class="p">:</span> <span class="kt">WCSessionActivationState</span><span class="p">,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BitcoinRate@objc(cs)WatchSessionManager(im)sessionDidBecomeInactive:"></a>
+                    <a name="//apple_ref/swift/Method/sessionDidBecomeInactive(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BitcoinRate@objc(cs)WatchSessionManager(im)sessionDidBecomeInactive:">sessionDidBecomeInactive(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the session can no longer be used to modify or add any new transfers and,
+all interactive messages will be cancelled, but delegate callbacks for background transfers can still occur.
+This will happen when the selected watch is being changed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">sessionDidBecomeInactive</span><span class="p">(</span><span class="n">_</span> <span class="nv">session</span><span class="p">:</span> <span class="kt">WCSession</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@BitcoinRate@objc(cs)WatchSessionManager(im)sessionDidDeactivate:"></a>
+                    <a name="//apple_ref/swift/Method/sessionDidDeactivate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@BitcoinRate@objc(cs)WatchSessionManager(im)sessionDidDeactivate:">sessionDidDeactivate(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when all delegate callbacks for the previously selected watch has occurred.
+The session can be re-activated for the now selected watch using activateSession.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">sessionDidDeactivate</span><span class="p">(</span><span class="n">_</span> <span class="nv">session</span><span class="p">:</span> <span class="kt">WCSession</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11BitcoinRate19WatchSessionManagerC24updateApplicationContextys10DictionaryVySSypG011applicationH0_tKF"></a>
+                    <a name="//apple_ref/swift/Method/updateApplicationContext(applicationContext:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11BitcoinRate19WatchSessionManagerC24updateApplicationContextys10DictionaryVySSypG011applicationH0_tKF">updateApplicationContext(applicationContext:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">updateApplicationContext</span><span class="p">(</span><span class="nv">applicationContext</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@BitcoinRate@objc(cs)WatchSessionManager(im)session:didReceiveMessage:"></a>
+                    <a name="//apple_ref/swift/Method/session(_:didReceiveMessage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@BitcoinRate@objc(cs)WatchSessionManager(im)session:didReceiveMessage:">session(_:didReceiveMessage:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">session</span><span class="p">(</span><span class="n">_</span> <span class="nv">session</span><span class="p">:</span> <span class="kt">WCSession</span><span class="p">,</span> <span class="n">didReceiveMessage</span> <span class="nv">message</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-05-10)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

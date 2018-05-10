@@ -1,6 +1,68 @@
 {
   "warnings": [
-
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/ReusableView.swift",
+      "line": null,
+      "symbol": "NibLoadableView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/ReusableView.swift",
+      "line": null,
+      "symbol": "ReusableView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/ReusableView.swift",
+      "line": 10,
+      "symbol": "ReusableView",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/ReusableView.swift",
+      "line": 11,
+      "symbol": "ReusableView.defaultReuseIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/ReusableView.swift",
+      "line": 15,
+      "symbol": "ReusableView.defaultReuseIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/ReusableView.swift",
+      "line": 20,
+      "symbol": "NibLoadableView",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/ReusableView.swift",
+      "line": 21,
+      "symbol": "NibLoadableView.nibName",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/ReusableView.swift",
+      "line": 25,
+      "symbol": "NibLoadableView.nibName",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/ReusableView.swift",
+      "line": 30,
+      "symbol": "EasyRegisteredCell",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    }
   ],
   "source_directory": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate"
 }

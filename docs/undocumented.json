@@ -1,6 +1,272 @@
 {
   "warnings": [
     {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/CachedWebservice.swift",
+      "line": 46,
+      "symbol": "Cache.load(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/CachedWebservice.swift",
+      "line": 62,
+      "symbol": "Cache.save(_:for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/CachedWebservice.swift",
+      "line": 86,
+      "symbol": "CachedWebservice.clearCache()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/CachedWebservice.swift",
+      "line": 90,
+      "symbol": "CachedWebservice.fetchCurrentRate(completionHandler:failureHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/CachedWebservice.swift",
+      "line": 106,
+      "symbol": "CachedWebservice.fetchHistoryRate(from:to:currency:completionHandler:failureHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/NetworkManager.swift",
+      "line": 12,
+      "symbol": "NetworkRessource",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/NetworkManager.swift",
+      "line": 14,
+      "symbol": "NetworkRessource.fetchCurrentRate(completionHandler:failureHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/NetworkManager.swift",
+      "line": 15,
+      "symbol": "NetworkRessource.fetchHistoryRate(from:to:currency:completionHandler:failureHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/NetworkManager.swift",
+      "line": 18,
+      "symbol": "FailureHandler",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/NetworkManager.swift",
+      "line": 20,
+      "symbol": "NetworkManager",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/NetworkManager.swift",
+      "line": 22,
+      "symbol": "NetworkManager.default",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/NetworkManager.swift",
+      "line": 26,
+      "symbol": "NetworkManager.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/NetworkManager.swift",
+      "line": 29,
+      "symbol": "NetworkManager.callRequest(request:withSuccess:andFailure:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/NetworkMockTest.swift",
+      "line": 16,
+      "symbol": "NetworkMockErrorTest.fetchCurrentRate(completionHandler:failureHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/NetworkMockTest.swift",
+      "line": 21,
+      "symbol": "NetworkMockErrorTest.fetchHistoryRate(from:to:currency:completionHandler:failureHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/NetworkMockTest.swift",
+      "line": 30,
+      "symbol": "NetworkMockTest.fetchCurrentRate(completionHandler:failureHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/NetworkMockTest.swift",
+      "line": 43,
+      "symbol": "NetworkMockTest.fetchHistoryRate(from:to:currency:completionHandler:failureHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/Router.swift",
+      "line": null,
+      "symbol": "Router",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/Router.swift",
+      "line": 11,
+      "symbol": "HTTPMethod",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/Router.swift",
+      "line": 12,
+      "symbol": "HTTPMethod.get",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/Router.swift",
+      "line": 13,
+      "symbol": "HTTPMethod.post",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/Router.swift",
+      "line": 14,
+      "symbol": "HTTPMethod.put",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/Router.swift",
+      "line": 17,
+      "symbol": "Router",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/Router.swift",
+      "line": 22,
+      "symbol": "Router.currentRate",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/Router.swift",
+      "line": 23,
+      "symbol": "Router.historyRate",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/Router.swift",
+      "line": 25,
+      "symbol": "Router.method",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/Router.swift",
+      "line": 34,
+      "symbol": "Router.path",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/Router.swift",
+      "line": 43,
+      "symbol": "Router.requestHeaders",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/Router.swift",
+      "line": 56,
+      "symbol": "Router.queryItems",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/Network/Router.swift",
+      "line": 76,
+      "symbol": "Router.asURLRequest()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/WatchSessionManager.swift",
+      "line": null,
+      "symbol": "WatchSessionManager",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/WatchSessionManager.swift",
+      "line": null,
+      "symbol": "WatchSessionManager",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/WatchSessionManager.swift",
+      "line": 13,
+      "symbol": "Keys",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/WatchSessionManager.swift",
+      "line": 14,
+      "symbol": "Keys.WatchAskUpdate",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/WatchSessionManager.swift",
+      "line": 17,
+      "symbol": "WatchSessionManager",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/WatchSessionManager.swift",
+      "line": 19,
+      "symbol": "WatchSessionManager.default",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/WatchSessionManager.swift",
+      "line": 110,
+      "symbol": "WatchSessionManager.updateApplicationContext(applicationContext:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Managers/WatchSessionManager.swift",
+      "line": 130,
+      "symbol": "WatchSessionManager.session(_:didReceiveMessage:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/Models/Currency.swift",
       "line": 11,
       "symbol": "Currency",
@@ -43,6 +309,41 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/Models/CurrentRateResponse.swift",
+      "line": 11,
+      "symbol": "CurrentRateResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/Models/CurrentRateResponse.swift",
+      "line": 12,
+      "symbol": "CurrentRateResponse.time",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/Models/CurrentRateResponse.swift",
+      "line": 13,
+      "symbol": "CurrentRateResponse.disclaimer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/Models/CurrentRateResponse.swift",
+      "line": 14,
+      "symbol": "CurrentRateResponse.chartName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/Models/CurrentRateResponse.swift",
+      "line": 15,
+      "symbol": "CurrentRateResponse.bpi",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/Models/HistoryRate.swift",
       "line": 11,
       "symbol": "HistoryRate",
@@ -78,374 +379,542 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Controllers/InterfaceController.swift",
-      "line": null,
-      "symbol": "InterfaceController",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Controllers/InterfaceController.swift",
-      "line": 13,
-      "symbol": "InterfaceController",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Controllers/InterfaceController.swift",
-      "line": 15,
-      "symbol": "InterfaceController.currentRateLabel",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Controllers/InterfaceController.swift",
-      "line": 16,
-      "symbol": "InterfaceController.currentSubtitleLabel",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Controllers/InterfaceController.swift",
-      "line": 17,
-      "symbol": "InterfaceController.historyLabel",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Controllers/InterfaceController.swift",
-      "line": 18,
-      "symbol": "InterfaceController.historyTable",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Controllers/InterfaceController.swift",
-      "line": 22,
-      "symbol": "InterfaceController.awake(withContext:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Controllers/InterfaceController.swift",
-      "line": 28,
-      "symbol": "InterfaceController.willActivate()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Controllers/InterfaceController.swift",
-      "line": 36,
-      "symbol": "InterfaceController.interfaceViewModel(model:didFailWith:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Controllers/InterfaceController.swift",
-      "line": 40,
-      "symbol": "InterfaceController.interfaceViewModelDidUpdateData(viewModel:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Controllers/NotificationController.swift",
-      "line": 14,
-      "symbol": "NotificationController",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Controllers/NotificationController.swift",
-      "line": 16,
-      "symbol": "NotificationController.init()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Controllers/NotificationController.swift",
-      "line": 23,
-      "symbol": "NotificationController.willActivate()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Controllers/NotificationController.swift",
-      "line": 28,
-      "symbol": "NotificationController.didDeactivate()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Controllers/RateTableRowController.swift",
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/Models/HistoryRateResponse.swift",
       "line": 11,
-      "symbol": "RateTableRowController",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Controllers/RateTableRowController.swift",
-      "line": 12,
-      "symbol": "RateTableRowController.topLabel",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Controllers/RateTableRowController.swift",
-      "line": 13,
-      "symbol": "RateTableRowController.bottomLabel",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Controllers/RateTableRowController.swift",
-      "line": 15,
-      "symbol": "RateTableRowController.configure(with:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Managers/PhoneSessionManager.swift",
-      "line": 13,
-      "symbol": "Keys",
+      "symbol": "HistoryRateResponse",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Managers/PhoneSessionManager.swift",
-      "line": 14,
-      "symbol": "Keys.WatchAskUpdate",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Managers/PhoneSessionManager.swift",
-      "line": 17,
-      "symbol": "PhoneSessionDelegate",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Managers/PhoneSessionManager.swift",
-      "line": 18,
-      "symbol": "PhoneSessionDelegate.phoneManagerIsReady(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Managers/PhoneSessionManager.swift",
-      "line": 19,
-      "symbol": "PhoneSessionDelegate.phoneManager(_:didReceived:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Managers/PhoneSessionManager.swift",
-      "line": 22,
-      "symbol": "PhoneSessionManager",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Managers/PhoneSessionManager.swift",
-      "line": 25,
-      "symbol": "PhoneSessionManager.delegate",
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/Models/HistoryRateResponse.swift",
+      "line": 12,
+      "symbol": "HistoryRateResponse.bpi",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Managers/PhoneSessionManager.swift",
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/Models/HistoryRateResponse.swift",
+      "line": 13,
+      "symbol": "HistoryRateResponse.disclaimer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/Models/HistoryRateResponse.swift",
+      "line": 14,
+      "symbol": "HistoryRateResponse.time",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/Models/ResponseTime.swift",
+      "line": 11,
+      "symbol": "ResponseTime",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/Models/ResponseTime.swift",
+      "line": 12,
+      "symbol": "ResponseTime.updated",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/Models/ResponseTime.swift",
+      "line": 13,
+      "symbol": "ResponseTime.updatedISO",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/Models/ResponseTime.swift",
+      "line": 14,
+      "symbol": "ResponseTime.updateduk",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewControllers/MainViewController.swift",
+      "line": null,
+      "symbol": "MainViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewControllers/MainViewController.swift",
+      "line": null,
+      "symbol": "MainViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewControllers/MainViewController.swift",
+      "line": 11,
+      "symbol": "MainViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewControllers/MainViewController.swift",
+      "line": 13,
+      "symbol": "MainViewController.viewModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewControllers/MainViewController.swift",
+      "line": 15,
+      "symbol": "MainViewController.headerView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewControllers/MainViewController.swift",
+      "line": 16,
+      "symbol": "MainViewController.historyTableView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewControllers/MainViewController.swift",
+      "line": 18,
+      "symbol": "MainViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewControllers/MainViewController.swift",
       "line": 27,
-      "symbol": "PhoneSessionManager.isSessionReady",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "symbol": "MainViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Managers/PhoneSessionManager.swift",
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewControllers/MainViewController.swift",
       "line": 31,
-      "symbol": "PhoneSessionManager.lastFechtedData",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Managers/PhoneSessionManager.swift",
-      "line": 43,
-      "symbol": "PhoneSessionManager.startSession()",
+      "symbol": "MainViewController.viewDidAppear(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Managers/PhoneSessionManager.swift",
-      "line": 48,
-      "symbol": "PhoneSessionManager.session(_:activationDidCompleteWith:error:)",
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewControllers/MainViewController.swift",
+      "line": 36,
+      "symbol": "MainViewController.addRefreshControl()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Managers/PhoneSessionManager.swift",
-      "line": 59,
-      "symbol": "PhoneSessionManager.session(_:didReceiveApplicationContext:)",
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewControllers/MainViewController.swift",
+      "line": 51,
+      "symbol": "MainViewController.mainViewModel(model:update:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Managers/PhoneSessionManager.swift",
-      "line": 68,
-      "symbol": "PhoneSessionManager.sendMessage(message:replyHandler:errorHandler:)",
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewControllers/MainViewController.swift",
+      "line": 55,
+      "symbol": "MainViewController.mainViewModelDidUpdateHistory(model:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Models/RateTableRowModel.swift",
-      "line": 11,
-      "symbol": "RateTableRowModel",
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewControllers/MainViewController.swift",
+      "line": 60,
+      "symbol": "MainViewController.mainViewModel(model:showError:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewControllers/MainViewController.swift",
+      "line": 71,
+      "symbol": "MainViewController.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewControllers/MainViewController.swift",
+      "line": 75,
+      "symbol": "MainViewController.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewControllers/MainViewController.swift",
+      "line": 79,
+      "symbol": "MainViewController.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewControllers/MainViewController.swift",
+      "line": 86,
+      "symbol": "MainViewController.tableView(_:titleForHeaderInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewModels/HeaderViewModel.swift",
+      "line": 12,
+      "symbol": "HeaderViewModel",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Models/RateTableRowModel.swift",
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewModels/HeaderViewModel.swift",
       "line": 13,
-      "symbol": "RateTableRowModel.title",
+      "symbol": "HeaderViewModel.title",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Models/RateTableRowModel.swift",
-      "line": 14,
-      "symbol": "RateTableRowModel.subtitle",
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewModels/HeaderViewModel.swift",
+      "line": 15,
+      "symbol": "HeaderViewModel.init(currency:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewModels/HistoryRateCellModel.swift",
+      "line": 11,
+      "symbol": "HistoryRateCellModel",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewModels/HistoryRateCellModel.swift",
+      "line": 12,
+      "symbol": "HistoryRateCellModel.rate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Models/RateTableRowModel.swift",
-      "line": 16,
-      "symbol": "RateTableRowModel.init(historyRate:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Supporting Files/ExtensionDelegate.swift",
-      "line": 11,
-      "symbol": "ExtensionDelegate",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Supporting Files/ExtensionDelegate.swift",
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewModels/HistoryRateCellModel.swift",
       "line": 13,
-      "symbol": "ExtensionDelegate.applicationDidFinishLaunching()",
+      "symbol": "HistoryRateCellModel.date",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewModels/HistoryRateCellModel.swift",
+      "line": 15,
+      "symbol": "HistoryRateCellModel.init(historyRate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Supporting Files/ExtensionDelegate.swift",
-      "line": 17,
-      "symbol": "ExtensionDelegate.applicationDidBecomeActive()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Supporting Files/ExtensionDelegate.swift",
-      "line": 21,
-      "symbol": "ExtensionDelegate.applicationWillResignActive()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/Supporting Files/ExtensionDelegate.swift",
-      "line": 26,
-      "symbol": "ExtensionDelegate.handle(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/ViewModels/InterfaceViewModel.swift",
-      "line": null,
-      "symbol": "InterfaceViewModel",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/ViewModels/InterfaceViewModel.swift",
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewModels/MainViewModel.swift",
       "line": 11,
-      "symbol": "InterfaceViewModelDelegate",
+      "symbol": "MainViewModelDelegate",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/ViewModels/InterfaceViewModel.swift",
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewModels/MainViewModel.swift",
       "line": 12,
-      "symbol": "InterfaceViewModelDelegate.interfaceViewModelDidUpdateData(viewModel:)",
+      "symbol": "MainViewModelDelegate.mainViewModelDidUpdateHistory(model:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/ViewModels/InterfaceViewModel.swift",
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewModels/MainViewModel.swift",
       "line": 13,
-      "symbol": "InterfaceViewModelDelegate.interfaceViewModel(model:didFailWith:)",
+      "symbol": "MainViewModelDelegate.mainViewModel(model:update:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/ViewModels/InterfaceViewModel.swift",
-      "line": 16,
-      "symbol": "InterfaceError",
-      "symbol_kind": "source.lang.swift.decl.enum",
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewModels/MainViewModel.swift",
+      "line": 14,
+      "symbol": "MainViewModelDelegate.mainViewModel(model:showError:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/ViewModels/InterfaceViewModel.swift",
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewModels/MainViewModel.swift",
       "line": 17,
-      "symbol": "InterfaceError.wrongData",
+      "symbol": "MainViewModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewModels/MainViewModel.swift",
+      "line": 22,
+      "symbol": "MainViewModel.delegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewModels/MainViewModel.swift",
+      "line": 24,
+      "symbol": "MainViewModel.totalRates",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewModels/MainViewModel.swift",
+      "line": 32,
+      "symbol": "MainViewModel.init(networkRessource:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewModels/MainViewModel.swift",
+      "line": 43,
+      "symbol": "MainViewModel.getCurrentRate()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewModels/MainViewModel.swift",
+      "line": 54,
+      "symbol": "MainViewModel.getHistoryRates()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/ViewModels/MainViewModel.swift",
+      "line": 69,
+      "symbol": "MainViewModel.historyCellModel(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/Views/HeaderView/HeaderView.swift",
+      "line": 12,
+      "symbol": "HeaderView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/Views/HeaderView/HeaderView.swift",
+      "line": 13,
+      "symbol": "HeaderView.centeredLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/Views/HeaderView/HeaderView.swift",
+      "line": 15,
+      "symbol": "HeaderView.setupUI()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/Views/HeaderView/HeaderView.swift",
+      "line": 21,
+      "symbol": "HeaderView.configure(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/Views/HistoryRateCell/HistoryRateCell.swift",
+      "line": 11,
+      "symbol": "HistoryRateCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/Views/HistoryRateCell/HistoryRateCell.swift",
+      "line": 13,
+      "symbol": "HistoryRateCell.topLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/Views/HistoryRateCell/HistoryRateCell.swift",
+      "line": 14,
+      "symbol": "HistoryRateCell.bottomLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/Views/HistoryRateCell/HistoryRateCell.swift",
+      "line": 16,
+      "symbol": "HistoryRateCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Stories/Main/Views/HistoryRateCell/HistoryRateCell.swift",
+      "line": 25,
+      "symbol": "HistoryRateCell.configure(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Supporting Files/AppDelegate.swift",
+      "line": 12,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Supporting Files/AppDelegate.swift",
+      "line": 14,
+      "symbol": "AppDelegate.window",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Supporting Files/AppDelegate.swift",
+      "line": 16,
+      "symbol": "AppDelegate.application(_:didFinishLaunchingWithOptions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/BRError.swift",
+      "line": 16,
+      "symbol": "BRError.error",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/ViewModels/InterfaceViewModel.swift",
-      "line": 20,
-      "symbol": "InterfaceViewModel",
-      "symbol_kind": "source.lang.swift.decl.class",
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/BRError.swift",
+      "line": 17,
+      "symbol": "BRError.message",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/ViewModels/InterfaceViewModel.swift",
-      "line": 26,
-      "symbol": "InterfaceViewModel.delegate",
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/BRError.swift",
+      "line": 19,
+      "symbol": "BRError.message",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/ViewModels/InterfaceViewModel.swift",
-      "line": 28,
-      "symbol": "InterfaceViewModel.totalFetchedRates",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/ViewModels/InterfaceViewModel.swift",
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/BRError.swift",
       "line": 32,
-      "symbol": "InterfaceViewModel.init()",
+      "symbol": "BRError.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/Extensions/HTTPURLResponse+Extension.swift",
+      "line": 12,
+      "symbol": "HTTPURLResponse.isStatusOK",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/Extensions/String+Extension.swift",
+      "line": 12,
+      "symbol": "String.localized",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/Extensions/UITableview+Extension.swift",
+      "line": 13,
+      "symbol": "UITableView.register(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/ViewModels/InterfaceViewModel.swift",
-      "line": 55,
-      "symbol": "InterfaceViewModel.currentRateTitle()",
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/Extensions/UITableview+Extension.swift",
+      "line": 17,
+      "symbol": "UITableView.register(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/ViewModels/InterfaceViewModel.swift",
-      "line": 85,
-      "symbol": "InterfaceViewModel.phoneManagerIsReady(_:)",
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/Extensions/UITableview+Extension.swift",
+      "line": 24,
+      "symbol": "UITableView.dequeueReusableCell(forIndexPath:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/Watch Extension/ViewModels/InterfaceViewModel.swift",
-      "line": 88,
-      "symbol": "InterfaceViewModel.phoneManager(_:didReceived:)",
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/NibSettable.swift",
+      "line": 13,
+      "symbol": "NibSettable.contentView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/NibSettable.swift",
+      "line": 15,
+      "symbol": "NibSettable.init(coder:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/NibSettable.swift",
+      "line": 20,
+      "symbol": "NibSettable.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/NibSettable.swift",
+      "line": 42,
+      "symbol": "NibSettable.setupUI()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/ReusableView.swift",
+      "line": null,
+      "symbol": "NibLoadableView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/ReusableView.swift",
+      "line": null,
+      "symbol": "ReusableView",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/ReusableView.swift",
+      "line": 10,
+      "symbol": "ReusableView",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/ReusableView.swift",
+      "line": 11,
+      "symbol": "ReusableView.defaultReuseIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/ReusableView.swift",
+      "line": 15,
+      "symbol": "ReusableView.defaultReuseIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/ReusableView.swift",
+      "line": 20,
+      "symbol": "NibLoadableView",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/ReusableView.swift",
+      "line": 21,
+      "symbol": "NibLoadableView.nibName",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/ReusableView.swift",
+      "line": 25,
+      "symbol": "NibLoadableView.nibName",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/natanielmartin/Documents/Projets perso/BitcoinRate/BitcoinRate/Utils/ReusableView.swift",
+      "line": 30,
+      "symbol": "EasyRegisteredCell",
+      "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     }
   ],

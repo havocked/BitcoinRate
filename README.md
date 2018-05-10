@@ -69,3 +69,11 @@ This pod is used in WatchSessionManager to combine nicely two network calls befo
 To test different parts of the project, I use the Xcode test framework.
 
 There's not a lot to test in UI. But you will find one that demonstrate the use of Mock ressources using *launchEnvironment* a the beginning of the test.
+
+## Documentation
+
+The documentation is generate with [Jazzy](https://github.com/realm/jazzy). We can re-generate an update documentation with the following commandline :
+
+```
+jazzy --min-acl internal -x -workspace,BitcoinRate.xcworkspace,-scheme,BitcoinRate
+```
