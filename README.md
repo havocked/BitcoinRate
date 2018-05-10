@@ -35,6 +35,8 @@ When possible, MVVM is used.
 
 ## Watch Extension
 
+⚠️ The extension was only tested with the simulator, I didn't have a physical device to test.  ⚠
+
 The extension uses WatchConnectivity framework to communicate with the iPhone.
 When the watch opens the app, it will wake up the iOS app with an Interactive message. The iOS app then will fetch the new data (cache and/or network) and returns it with the *updateApplicationContext* method.
 
@@ -47,6 +49,7 @@ Watch ->         sendMessage          -> iOS
                                           | Fetch new data
       <-   updateApplicationContext   <-
 ```
+️
 
 ## Notes about the challenge
 
