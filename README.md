@@ -14,7 +14,7 @@ Cheers !
 
 ## Building the project
 
-This project use [Cocoapods](https://cocoapods.org). Tap the following commands in the root directory 
+This project use [Cocoapods](https://cocoapods.org). Write the following commands in the root directory 
 
 ```
 $> sudo gem install cocoapods
@@ -73,7 +73,7 @@ There's not a lot to test in UI. But you will find one that demonstrate the use 
 
 ## Documentation
 
-The [documentation](./docs) is generate with [Jazzy](https://github.com/realm/jazzy). We can re-generate an update documentation with the following commandline :
+The [documentation](./docs) is generate with [Jazzy](https://github.com/realm/jazzy). We can re-generate an updated version of the documentation with the following command-line :
 
 ```
 jazzy --min-acl internal -x -workspace,BitcoinRate.xcworkspace,-scheme,BitcoinRate
